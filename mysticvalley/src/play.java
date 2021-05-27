@@ -305,7 +305,10 @@ public class play {
                     + "\nquando ele estava no sentido contrário, as árvores podiam ser vista á esquerda\n",TimeUnit.MILLISECONDS, temp_dialog);
             
             /*FIM CAP ||*/
+            System.out.println("Teste");
+            
             }
+      
 }
 
 
