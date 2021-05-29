@@ -23,7 +23,7 @@ public class play {
 		float n;//Declarando n como variavel local	
 		System.out.println(" *Entrada de dados* \nDigite um número de cada vez. ");
 		System.out.println("Número: ");
-		n = entrada.nextFloat();
+		n= entrada.nextFloat();
 		return n;
 
 	}
@@ -53,22 +53,22 @@ public class play {
 
 			System.out.println("Opção: ");
 			op = entrada.nextInt();
-		}while(op < 1 || op >4); //Mostre as opções novamente quando o jogador colocar um número diferente das opções mostradas.
+		}while(op < 1 || op >4); //Mostra as opções novamente quando o jogador colocar um número diferente das opções mostradas.
 
 		return op;
 	}
 	static float adicao (float n1,float n2) {
-		System.out.println(" *Adição* ");
 		float resultado;
 		resultado = n1+n2;
+
 		System.out.printf(" _____________________\r\n"
 				+ "|  _________________  |\r\n"
 				+ "| |    *Adição*     | |\r\n"
 				+ "| |                 | |\r\n"
 				+ "| |                 | |\r\n"
-				+ "| |   %.2f + %.2f   | |\r\n"
+				+ "| |%.1f  +  %.1f    | |\r\n"
 				+ "| |       =         | |\r\n"
-				+ "| |      %.2f       | |\r\n"              
+				+ "| |%.1f             | |\r\n"              
 				+ "| |_________________| |\r\n"
 				+ "|  ___ ___ ___   ___  |\r\n"
 				+ "| | 7 | 8 | 9 | | + | |\r\n"
@@ -80,53 +80,117 @@ public class play {
 				+ "| | . | 0 | = | | / | |\r\n"
 				+ "| |___|___|___| |___| |\r\n"
 				+ "|_____________________|",n1,n2,resultado);
-		return resultado;
-	}
+
+		return resultado;}
+
 	static float subtracao(float n1, float n2) {
-		System.out.println(" *Subtração* ");
 		float resultado;
 		resultado = n1 - n2;
+
+		System.out.printf(" _____________________\r\n"
+				+ "|  _________________  |\r\n"
+				+ "| |   *Subtração*   | |\r\n"
+				+ "| |                 | |\r\n"
+				+ "| |                 | |\r\n"
+				+ "| |%.1f  -  %.1f    | |\r\n"
+				+ "| |       =         | |\r\n"
+				+ "| |%.1f             | |\r\n"              
+				+ "| |_________________| |\r\n"
+				+ "|  ___ ___ ___   ___  |\r\n"
+				+ "| | 7 | 8 | 9 | | + | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | 4 | 5 | 6 | | - | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | 1 | 2 | 3 | | x | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | . | 0 | = | | / | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "|_____________________|",n1,n2,resultado);
+
 		return resultado;
 	}
 	static float multiplicacao(float n1, float n2) {
-		System.out.println(" *Multiplicação* ");
 		float resultado;
 		resultado = n1 * n2;
+
+		System.out.printf(" _____________________\r\n"
+				+ "|  _________________  |\r\n"
+				+ "| | *Multiplicação* | |\r\n"
+				+ "| |                 | |\r\n"
+				+ "| |                 | |\r\n"
+				+ "| |%.1f  x  %.1f    | |\r\n"
+				+ "| |       =         | |\r\n"
+				+ "| |%.1f             | |\r\n"              
+				+ "| |_________________| |\r\n"
+				+ "|  ___ ___ ___   ___  |\r\n"
+				+ "| | 7 | 8 | 9 | | + | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | 4 | 5 | 6 | | - | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | 1 | 2 | 3 | | x | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | . | 0 | = | | / | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "|_____________________|",n1,n2,resultado);
+
 		return resultado;
 	}
 	static float divisao(float n1, float n2) {
-		System.out.println(" *Divisão* ");
 		float resultado;
-		resultado = n1 / n2;
+		resultado =  n1 / n2;
+
+		System.out.printf(" _____________________\r\n"
+				+ "|  _________________  |\r\n"
+				+ "| |    *Divisão*    | |\r\n"
+				+ "| |                 | |\r\n"
+				+ "| |                 | |\r\n"
+				+ "| |%.1f  ÷  %.1f    | |\r\n"
+				+ "| |       =         | |\r\n"
+				+ "| |%.1f             | |\r\n"              
+				+ "| |_________________| |\r\n"
+				+ "|  ___ ___ ___   ___  |\r\n"
+				+ "| | 7 | 8 | 9 | | + | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | 4 | 5 | 6 | | - | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | 1 | 2 | 3 | | x | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "| | . | 0 | = | | / | |\r\n"
+				+ "| |___|___|___| |___| |\r\n"
+				+ "|_____________________|",n1,n2,resultado);
+
 		return resultado;
 	}
-	static void imprimirResultado (float result) {
-		System.out.printf("Resultado: %.2f \n",result);
-	}
+
 	static float controlador(int op,float n1, float n2) {
+
 		float resultado = 0;
+
 		switch (op) {
 		case 1:
-			//chama a funçaõ de adição
-			resultado = adicao(n1,n2);
+			//chama a função de adição
+			resultado =  adicao(n1,n2);
 			break;
 		case 2:
-			//chama a funçãi subtração
-			resultado = subtracao(n1,n2);
+			//chama a função subtração
+			resultado =  subtracao(n1,n2);
 			break;
 		case 3:
 			//chama a função divisão
 			resultado = divisao(n1,n2);
 			break;
 		case 4:
-			//chama a funçãi multiplicação
-			resultado = multiplicacao(n1,n2);
+			//chama a função multiplicação
+			resultado =  multiplicacao(n1,n2);
 			break;
 		default:
 			resultado = 0;
 		}
 		return resultado;
+
+
 	}
+
 
 
 
@@ -418,25 +482,30 @@ public class play {
 				+ "\nquando ele estava no sentido contrÃ¡rio, as Ã¡rvores podiam ser vista Ã¡ esquerda\n",TimeUnit.MILLISECONDS, temp_dialog);
 
 		/*FIM CAP II*/
-		
-		Digita("Capítulo III - A primeira pista\n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap III
-		Digita("Com isso o xerife percebe que não conseguiria solucionar este crime sem um profissional especializado no ramo da investigação. Então ele chamou um detetive para ajudá-lo a solucionar esse crime.\r\n"
-				+ "Ao entrarem mais fundo no templo, o detetive logo encontrou a primeira pista, um tufo de pelos foi encontrado caído no templo, como na ilha habita diversas criaturas diferentes, não foi possível identificar de quem era esse pelo. Imediatamente o xerife propôs uma assembléia e convocou todos os clãs para debaterem de quem era o pelo e achar o culpado.\r\n"
-				+ "O pelo era amarronzado, com uma textura sedosa, bem liso. A assembléia começou, todos os clãs estavam reunidos, separados por grupos para melhor análise, o xerife e detetive, foram passando de grupo em grupo, para compararem o pelo.\r\n \n"
-				+ "De quem era o pelo?\r\n \n"
-				+ "",TimeUnit.MILLISECONDS, temp_dialog);
 
-		Digita("Ao comparar o pelo, surge o seguinte desafio:\r\n \n"
-				+ "		Decifre o código para descobrir quem é o dono do pelo: \r\n \n"
+		Digita("Capítulo III - A primeira pista\n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap III
+
+
+		System.out.println("\nCom isso o xerife percebe que não conseguiria solucionar este crime sem um profissional especializado no ramo da investigação.\r\n"
+				+ "Então ele chamou um detetive para ajudá-lo a solucionar esse crime. Ao entrarem mais fundo no templo, o detetive logo encontrou a primeira pista,\r\n"
+				+ "um tufo de pelos foi encontrado caído no templo, como na ilha habita diversas criaturas diferentes, não foi possível identificar de quem era esse pelo.\r\n"
+				+ "Imediatamente o xerife propôs uma assembléia e convocou todos os clãs para debaterem de quem era o pelo e achar o culpado.\r\n"
+				+ "O pelo era amarronzado, com uma textura sedosa, bem liso. A assembléia começou, todos os clãs estavam reunidos, separados por grupos para melhor análise,\r\n"
+				+ "o xerife e detetive, foram passando de grupo em grupo, para compararem o pelo.\r\n");
+
+		Digita("\nDe quem era o pelo?\n",TimeUnit.MILLISECONDS, temp_dialog);
+
+		System.out.println("\nAo comparar o pelo, surge o seguinte desafio:\r\n \n"
+				+ "		\nDecifre o código para descobrir quem é o dono do pelo: \r\n \n"
 				+ "Ω = 5   | ᄿᴥᄽ= 2  |  ㉧▼㉧ = 3  | ȣ = 1  |<(º) = 6 | ●๋: = 9| ◤-.-◥ = 4 | ♞ = 7 | ϟ = 8 | 傘 =9\r\n"
 				+ "♨=10 | ✩ = 11 | ಜ=12 | ஐ = 13 | ʚĭɞ = 14 | ◑ = 15 | ☪ = 16 | ☀ = 17 | ☘ = 18 | ლ = 19\r\n"
-				+ "⌘ = 20 | ❃ = 21 \n ",TimeUnit.MILLISECONDS, temp_dialog);
+				+ "⌘ = 20 | ❃ = 21 \n ");
 
 		Digita("\n㉧▼㉧  |  ( (♨ - ◤-.-◥) - ȣ )  |  ʚĭɞ  | ⌘ |  ȣ |  ((✩ + ლ) - ●๋:) |  ☘ |  ( ♨+Ω) \n",TimeUnit.MILLISECONDS, temp_dialog);
 
 		String operacao,certo = " 3 | 5 | 14 | 20 | 1 | 21 | 18 | 15 ";//Resposta certa do desafio.
 
-		Digita("\nPara te ajudar, use calculadora: \n",TimeUnit.MILLISECONDS, temp_dialog );
+		System.out.println("\nPara te ajudar, use calculadora: \n" );
 
 		String calculadora;//Variável para ver se o jogador quer utilizar dnv a calculadora.
 		do {
@@ -444,12 +513,10 @@ public class play {
 			float n1 = entradaDados();//Chama a função que pede ao jogador o primeiro dado.
 			float n2 = entradaDados();//Chama a função que pede ao jogador o segundo dado.
 			float result = controlador(op,n1,n2);//Chama a função que faz a operação.
-			imprimirResultado(result);//Chama a função que imprimi o resultado.
 			System.out.println("\nPrecisa utilizar novamente? ");
 			calculadora = entrada.nextLine().toUpperCase();//Recebe o que o jogador digitou e deixa tudo em Maiúsculo.
 
 		}while(calculadora.equalsIgnoreCase("SIM"));
-
 		do {
 
 			List <String> emb = Arrays.asList (" 4 | 6 | 15 | 21 | 2 | 22 | 19 | 16 " ,  " 3 | 4 | 13 | 19 | 1 | 20 | 17 | 14 " , " 3 | 5 | 14 | 21 | 1 | 21 | 17 | 15 " ,  " 6 | 5 | 19 | 10 | 4 | 21 | 15 | 18 ", " 3 | 5 | 14 | 20 | 1 | 21 | 18 | 15 ");
@@ -458,18 +525,18 @@ public class play {
 
 			Digita("\n       *Quais valores foram encontrados?*        \n ",TimeUnit.MILLISECONDS, temp_dialog);
 
-			Digita("\nSelecione a sequência equivalente:\n ",TimeUnit.MILLISECONDS, temp_dialog);
+			System.out.println("\nSelecione a sequência equivalente:\n");
 
-			Digita("<A>" + emb.get(0)+"\n",TimeUnit.MILLISECONDS, temp_dialog);
-			Digita(" <B>" + emb.get(1)+"\n",TimeUnit.MILLISECONDS, temp_dialog);
-			Digita(" <C>" + emb.get(2)+"\n",TimeUnit.MILLISECONDS, temp_dialog);
-			Digita(" <D>" + emb.get(3)+"\n",TimeUnit.MILLISECONDS, temp_dialog);
-			Digita(" <E>" + emb.get(4)+"\n",TimeUnit.MILLISECONDS, temp_dialog);
+			System.out.println(" <A>" + emb.get(0)+"\n");//Opções com embaralhar a ordem.
+			System.out.println(" <B>" + emb.get(1)+"\n");
+			System.out.println(" <C>" + emb.get(2)+"\n");
+			System.out.println(" <D>" + emb.get(3)+"\n");
+			System.out.println(" <E>" + emb.get(4)+"\n");
 			operacao = entrada.next();
 
 			switch(operacao.toUpperCase()) {
 
-			case "A":
+			case "A"://Switch com todas as respostas incorretas.
 				if (emb.get(0).equals(certo)){
 					operacao = certo;
 				}else {
@@ -515,54 +582,60 @@ public class play {
 
 		}while(!(operacao.equalsIgnoreCase(certo)));{
 
-			if(operacao.equalsIgnoreCase(certo)) {
-				Digita("Resposta Correta!!",TimeUnit.MILLISECONDS, temp_dialog);
-			}else {
-				Digita("Tente novamente!",TimeUnit.MILLISECONDS, temp_dialog);
+			if(operacao.equalsIgnoreCase(certo)) {//If com resposta correta.
 
-				String culpado=null;
+				Digita("Resposta Correta!!\n",TimeUnit.MILLISECONDS, temp_dialog);
+
+				String correto = "CENTAURO",culpado;
+
+				Scanner entr = new Scanner(System.in);
 				do {
-					Digita("Boa!! Você decifrou uma parte do código, agora é necessário decifrar mais uma parte, bora lá \n",TimeUnit.MILLISECONDS, temp_dialog);
-					if(culpado.equals("CENTAURO")) {
-						System.out.println("Isso aí, o dono do pelo faz parte do clã dos Centauros!! \"         =*===\\r\\n\"\r\n"
-								+ "				+ \"       $$- - $$$\\r\\n\"\r\n"
-								+ "				+ \"       $ <    D$$\\r\\n\"\r\n"
-								+ "				+ \"       $ -   $$$\\r\\n\"\r\n"
-								+ "				+ \" ,     $$$$  |\\r\\n\"\r\n"
-								+ "				+ \"///; ,---' _ |----.\\r\\n\"\r\n"
-								+ "				+ \" \\\\ )(           /  )\\r\\n\"\r\n"
-								+ "				+ \" | \\\\/ \\\\.   '  _.|  \\\\              $\\r\\n\"\r\n"
-								+ "				+ \" |  \\\\ /(   /    /\\\\_ \\\\          $$$$$\\r\\n\"\r\n"
-								+ "				+ \"  \\\\ /  (       / /  )         $$$ $$$\\r\\n\"\r\n"
-								+ "				+ \"       (  ,   /_/ ,`_,-----.,$$  $$$\\r\\n\"\r\n"
-								+ "				+ \"       |   <----|  \\\\---##     \\\\   $$\\r\\n\"\r\n"
-								+ "				+ \"       /         \\\\\\\\\\\\           |    $\\r\\n\"\r\n"
-								+ "				+ \"      '   '                    |\\r\\n\"\r\n"
-								+ "				+ \"      |                 \\\\      /\\r\\n\"\r\n"
-								+ "				+ \"      /  \\\\_|    /______,/     /\\r\\n\"\r\n"
-								+ "				+ \"     /   / |   /    |   |    /\\r\\n\"\r\n"
-								+ "				+ \"    (   /--|  /.     \\\\  (\\\\  (_\\r\\n\"\r\n"
-								+ "				+ \"     `----,( ( _\\\\     \\\\ / / ,/\\r\\n\"\r\n"
-								+ "				+ \"           | /        /,_/,/\\r\\n\"\r\n"
-								+ "				+ \"          _|/        / / (\\r\\n\"\r\n"
-								+ "				+ \"         / (        ^-/, |\\r\\n\"\r\n"
-								+ "				+ \"        /, |          ^-    \\r\\n\"\r\n"
-								+ "				+ \"        ^-\");");
+					Digita("\n    Decifre mais uma parte do código e encontre o culpado!! \n",TimeUnit.MILLISECONDS, temp_dialog);
+					System.out.println("\n A= 1 | B= 2 | C= 3 | D= 4 | E= 5 | F= 6 | G= 7 | H= 8 | I= 9 | J= 10 | K= 11 | L= 12 | M= 13 "
+							+ "\n N= 14 | O= 15 | P= 16 | Q= 17 | R= 18 | S=19 | T=20 | U= 21 | V= 22 | W= 23 | X= 24 | Y= 25 | Z= 26 \n ");
 
-					}else;
-					Digita(" Decifre o código para descobrir quem é o dono do pelo: \n A= 1 | B= 2 | C= 3 | D= 4 | E= 5 | F= 6 | G= 7 | H= 8 | I= 9 | J= 10 | K= 11 | L= 12 | M= 13 "
-							+ " N= 14 | O= 15 | P= 16 | Q= 17 | R= 18 | S=19 | T=20 | U= 21 | V= 22 | W= 23 | X= 24 | Y= 25 | Z= 26 ",TimeUnit.MILLISECONDS, temp_dialog);
-					Digita("\n       *Quem é o culpado?*        \n ",TimeUnit.MILLISECONDS, temp_dialog);
-					culpado = entrada.nextLine().toUpperCase();
+					Digita("\n                           *Quem foi o culpado  encontrado?*        \n ",TimeUnit.MILLISECONDS, temp_dialog);
 
-				}while(!(culpado.equals("CENTAURO")));
+					culpado = entr.nextLine().toUpperCase();
+
+					if(culpado.equals(correto)) {
+						System.out.println("\nIsso aí, você encontrou a primeira pista, o dono do pelo faz parte do clã dos Centauros!! \n "
+								+ "       \n         =*===\r\n"
+								+ "       $$- - $$$\r\n"
+								+ "       $ <    D$$\r\n"
+								+ "       $ -   $$$\r\n"
+								+ " ,     $$$$  |\r\n"
+								+ "///; ,---' _ |----.\r\n"
+								+ " \\ )(           /  )\r\n"
+								+ " | \\/ \\.   '  _.|  \\              $\r\n"
+								+ " |  \\ /(   /    /\\_ \\          $$$$$\r\n"
+								+ "  \\ /  (       / /  )         $$$ $$$\r\n"
+								+ "       (  ,   /_/ ,`_,-----.,$$  $$$\r\n"
+								+ "       |   <----|  \\---##     \\   $$\r\n"
+								+ "       /         \\\\\\           |    $\r\n"
+								+ "      '   '                    |\r\n"
+								+ "      |                 \\      /\r\n"
+								+ "      /  \\_|    /______,/     /\r\n"
+								+ "     /   / |   /    |   |    /\r\n"
+								+ "    (   /--|  /.     \\  (\\  (_\r\n"
+								+ "     `----,( ( _\\     \\ / / ,/\r\n"
+								+ "           | /        /,_/,/\r\n"
+								+ "          _|/        / / (\r\n"
+								+ "         / (        ^-/, |\r\n"
+								+ "        /, |          ^-  \r\n"                   
+								);
+
+
+					}else 
+						System.out.println("Tente novamente! \n");
+
+				}while(!(culpado.equals(correto)));
+
+
 
 			}
 
-
-
 		}
-
 	}
-}
 
+}
