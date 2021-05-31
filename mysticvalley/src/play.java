@@ -336,7 +336,7 @@ public class play {
 				caminhocerto = "Pedir ajuda a um jovem bruxo que estÃ¡ a observar.",
 				escolhacap2,enigcap2 = "10";
 
-		System.out.println("CapÃ­tulo II  - O roubo\n\n");
+		System.out.println("CapÃ­tulo II  - O roubo\n\n");//Inicio cap 2.
 		Digita("Em uma noite de comemoraÃ§Ãµes onde todos os clÃ£s estavam reunidos no grande salÃ£o, o alarme do clÃ£ dos bruxos "
 				+ "\necoa por todos os cantos da cidade, mostrando assim que algo muito ruim havia acontecido. Rapidamente todos "
 				+ "daquela festa se apavoram e procuram pelo xerife da cidade que foi incumbido a preservar a ordem de toda vila. "
@@ -347,19 +347,19 @@ public class play {
 				+ "\nAo chegarem na regiÃ£o dos bruxos, logo descobrem que o item levado foi o mais valioso de toda ilha, o templo"
 				+ "\nonde estava guardada por muitos anos havia sido violado por um usurpador, mas para qualquer ser que desejasse "
 				+ "\nadentra-la, precisaria primeiro decifrar o enigma escrito em lÃ­ngua de bruxo logo acima do portÃ£o de entrada."
-				,TimeUnit.MILLISECONDS, temp_dialog);
+				,TimeUnit.MILLISECONDS, temp_dialog);// puxa fun��o "Digita", para apresenta��o em forma de leitura.
 
 		do{
 
 			List <String> list = Arrays.asList("Pedir ajuda a um jovem bruxo que estÃ¡ a observar."
 					,"Tentar resolver sozinho.","Invadir com forÃ§a bruta, mas sabendo que hÃ¡ um feitiÃ§o de proteÃ§Ã£o.");
-			Collections.shuffle(list);
+			Collections.shuffle(list);//Embaralhar as alternativas
 
 			Digita("\nVocÃª tem algumas opÃ§Ãµes para resoluÃ§Ã£o deste enigma:"
 					+ "\n1 â€“ " + list.get(0)
 					+ "\n2 â€“ " + list.get(1)
 					+ "\n3 â€“ " + list.get(2)
-					+ "\nIndique qual caminho deseja seguir em nÃºmero: ",TimeUnit.MILLISECONDS, temp_dialog);
+					+ "\nIndique qual caminho deseja seguir em nÃºmero: ",TimeUnit.MILLISECONDS, temp_dialog);//Pedir ajuda � o caminho mais sensato
 			escolhacaminho = entrada.next();
 
 			switch(escolhacaminho){
@@ -412,7 +412,7 @@ public class play {
 
 		do{
 			List<String> list = Arrays.asList("20","15","10","30","25");
-			Collections.shuffle(list);
+			Collections.shuffle(list);//Embaralhar as alternativas
 
 			Digita("\nQuantas Ã¡rvores ele viu no total nesse dia?"
 					+ "\nA) " + list.get(0)
@@ -420,7 +420,7 @@ public class play {
 					+ "\nC) " + list.get(2)
 					+ "\nD) " + list.get(3)
 					+ "\nE) " + list.get(4)
-					+ "\nQual Ã© a Alternativa Correta:",TimeUnit.MILLISECONDS, temp_dialog);
+					+ "\nQual Ã© a Alternativa Correta:",TimeUnit.MILLISECONDS, temp_dialog);// Alternativa 10 correta de acordo com a l�gica.
 			escolhacap2 = entrada.next();
 
 			switch (escolhacap2.toUpperCase()) {
@@ -461,7 +461,7 @@ public class play {
 					System.out.println("\nAlternativa Incorreta!");
 				}
 				break;
-			default:
+			default://tratamento caso respota seja em forma de n�mero.
 				if(escolhacap2.equals(enigcap2)){
 					escolhacap2 = enigcap2;
 				}
@@ -479,9 +479,9 @@ public class play {
 		Digita("\n\nAlternativa correta! VocÃª conseguiu desfazer o feitiÃ§o de proteÃ§Ã£o!"
 				+ "\n\nPois, sÃ£o as mesmas 10 Ã¡rvores vistas de diferente perspectivas."
 				+ "\nNa ida, Ã¡rvores estavam Ã¡ direita do mago, mas na volta"
-				+ "\nquando ele estava no sentido contrÃ¡rio, as Ã¡rvores podiam ser vista Ã¡ esquerda\n",TimeUnit.MILLISECONDS, temp_dialog);
+				+ "\nquando ele estava no sentido contrÃ¡rio, as Ã¡rvores podiam ser vista Ã¡ esquerda\n",TimeUnit.MILLISECONDS, temp_dialog);//explica��o da l�gica.
 
-		/*FIM CAP II*/
+		//FIM CAP II
 
 		Digita("Capítulo III - A primeira pista\n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap III
 
@@ -497,11 +497,11 @@ public class play {
 
 		System.out.println("\nAo comparar o pelo, surge o seguinte desafio:\r\n \n"
 				+ "		\nDecifre o código para descobrir quem é o dono do pelo: \r\n \n"
-				+ "Ω = 5   | ᄿᴥᄽ= 2  |  ㉧▼㉧ = 3  | ȣ = 1  |<(º) = 6 | ●๋: = 9| ◤-.-◥ = 4 | ♞ = 7 | ϟ = 8 | 傘 =9\r\n"
-				+ "♨=10 | ✩ = 11 | ಜ=12 | ஐ = 13 | ʚĭɞ = 14 | ◑ = 15 | ☪ = 16 | ☀ = 17 | ☘ = 18 | ლ = 19\r\n"
-				+ "⌘ = 20 | ❃ = 21 \n ");
+				+ "Ω = 5   | ᄿᴥᄽ= 2  |  ㉧▼㉧ = 3  | ȣ = 1  |<(º) = 6 | �?๋: = 9| ◤-.-◥ = 4 | ♞ = 7 | ϟ = 8 | 傘 =9\r\n"
+				+ "♨=10 | ✩ = 11 | ಜ=12 | �? = 13 | ʚĭɞ = 14 | ◑ = 15 | ☪ = 16 | ☀ = 17 | ☘ = 18 | ლ = 19\r\n"
+				+ "⌘ = 20 | �?� = 21 \n ");
 
-		Digita("\n㉧▼㉧  |  ( (♨ - ◤-.-◥) - ȣ )  |  ʚĭɞ  | ⌘ |  ȣ |  ((✩ + ლ) - ●๋:) |  ☘ |  ( ♨+Ω) \n",TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n㉧▼㉧  |  ( (♨ - ◤-.-◥) - ȣ )  |  ʚĭɞ  | ⌘ |  ȣ |  ((✩ + ლ) - �?๋:) |  ☘ |  ( ♨+Ω) \n",TimeUnit.MILLISECONDS, temp_dialog);
 
 		String operacao,certo = " 3 | 5 | 14 | 20 | 1 | 21 | 18 | 15 ";//Resposta certa do desafio.
 
