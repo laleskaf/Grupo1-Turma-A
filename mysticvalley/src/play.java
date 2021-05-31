@@ -256,32 +256,33 @@ public class play {
 			System.out.println("VocÃª escolheu {JOGAR}");
 			//continuar o cÃ³digo aqui 
 			System.out.printf("\n");
-			System.out.println("CapÃ­tulo  I - Potion of immortality\n"
-					+ "No meio de um oceano tÃ£o tÃ£o distante existe uma ilha misteriosa, quase tÃ£o grande quanto um paÃ­s, ");
-			System.out.println("nessa ilha existe vilarejo chamado Mystic Valley ");
-			System.out.println("onde habita diversas criaturas mÃ¡gicas de todas as espÃ©cies,");
-			System.out.println("que sÃ£o separadas por clÃ£s. O clÃ£ dos bruxos Ã© um dos mais poderosos de toda ilha,");
-			System.out.println("pois eles possuem conhecimentos antigos, fÃ³rmulas e poÃ§Ãµes mÃ¡gicas,");
-			System.out.println("uma dessas poÃ§Ãµes talvez a mais rara e cobiÃ§ada de toda ilha, Ã© a potion of immortality,");
-			System.out.println("onde o mito diz: Aquele que a consumir nunca morrerÃ¡.");
-			System.out.printf("\n");
-			System.out.println("Todos os forasteiros de todos os cantos do mundo sÃ£o atraÃ­dos por essa ideia,");
-			System.out.println("com a cobiÃ§a de a possui-la para si prÃ³prio, ");
-			System.out.println("mas ao chegarem nas margens da ilha apenas aqueles seres mÃ¡gicos ou aqueles que provarem seu valor poderam adentrar-la,");
-			System.out.println("atravÃ©s de um enigma implantado por mÃ¡gia......");
+			System.out.println("CapÃ­tulo  I - Potion of immortality\n");
+		        Digita ("\nNo meio de um oceano tÃ£o tÃ£o distante existe uma ilha misteriosa, quase tÃ£o grande quanto um paÃ­s, "
+			+ "\nnessa ilha existe vilarejo chamado Mystic Valley "
+			+"\nonde habita diversas criaturas mÃ¡gicas de todas as espÃ©cies,"
+			+"\nque sÃ£o separadas por clÃ£s. O clÃ£ dos bruxos Ã© um dos mais poderosos de toda ilha,"
+			+"\npois eles possuem conhecimentos antigos, fÃ³rmulas e poÃ§Ãµes mÃ¡gicas,"
+			+"\numa dessas poÃ§Ãµes talvez a mais rara e cobiÃ§ada de toda ilha, Ã© a potion of immortality,"
+			+"\nonde o mito diz: Aquele que a consumir nunca morrerÃ¡.",TimeUnit.MILLISECONDS, temp_dialog);
+			
+			Digita("\n\nTodos os forasteiros de todos os cantos do mundo sÃ£o atraÃ­dos por essa ideia,"
+			+"\ncom a cobiÃ§a de a possui-la para si prÃ³prio, "
+			+"\nmas ao chegarem nas margens da ilha apenas aqueles seres mÃ¡gicos ou aqueles que provarem seu valor poderam adentrar-la,"
+			+"\natravÃ©s de um enigma implantado por mÃ¡gia......",TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.printf("\n");
 
 			do {
-				System.out.println("Em um jardim: A) todas as flores, menos duas sÃ£o rosas ");
-				System.out.println("B) todas as flores, menos duas sÃ£o margaridas");
-				System.out.println("C) todas as flores, menos duas sÃ£o orquÃ­deas.");
-				System.out.println("Quantas flores hÃ¡ no jardim?");// desafio 1
-
-				System.out.println("a) " + urna.get(0));
-				System.out.println("b) " + urna.get(1));
-				System.out.println("c) " + urna.get(2));
-				System.out.println("d) " + urna.get(3));
-				System.out.println("e) " + urna.get(4));
+				Digita("Em um jardim: "
+                                        +"\nA) todas as flores, menos duas sÃ£o rosas "
+				        +"\nB) todas as flores, menos duas sÃ£o margaridas"
+				        +"\nC) todas as flores, menos duas sÃ£o orquÃ­deas.",TimeUnit.MILLISECONDS, temp_dialog);
+				        
+                                Digita("Quantas flores hÃ¡ no jardim?"// desafio 1
+				+"\na) " + urna.get(0)
+				+"\nb) " + urna.get(1)
+				+"\nc) " + urna.get(2)
+				+"\nd) " + urna.get(3)
+				+"\ne) " + urna.get(4),TimeUnit.MILLISECONDS, temp_dialog);
 				System.out.print(":");
 				resposta = entrada.next();
 				switch (resposta.toUpperCase()) {
@@ -323,8 +324,8 @@ public class play {
 				}
 
 			} while ((!(resposta.equalsIgnoreCase(alternativa1))));
-			System.out.println("ParabÃ©ns !!!! VocÃª entrou na ilha, aqui comeÃ§a a sua histÃ³ria.....");
-			System.out.println("BOA SORTE");// final capitulo 1
+			Digita("ParabÃ©ns !!!! VocÃª entrou na ilha, aqui comeÃ§a a sua histÃ³ria....."
+			+"\nBOA SORTE!!",TimeUnit.MILLISECONDS, temp_dialog);// final capitulo 1
 
 		}
 
