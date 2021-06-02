@@ -14,7 +14,7 @@ public class play {
 			unit.sleep(tempo_mensagem);
 		}
 	}
-	static int temp_dialog =48, temp_narrativa = 150, temp_transicao = 25;
+	static int temp_dialog =30, temp_narrativa = 150, temp_transicao = 25;
 
 	static Scanner entrada = new Scanner(System.in);//Scanner global.
 
@@ -333,33 +333,33 @@ public class play {
 	}
 	static void capitulo2() throws Exception{//Apartir daqui não esta bugado!
 		String escolhacaminho,caminhoalternativo = "Tentar resolver sozinho.", 
-                caminhocerto = "Pedir ajuda a um jovem bruxo que está a observar.",
+                caminhocerto = "Pedir ajuda a um jovem bruxo que estï¿½ a observar.",
                 escolhacap2,enigcap2 = "10";
         
-        System.out.println("Capítulo II  - O roubo\n\n");
-        Digita("Em uma noite de comemorações onde todos os clãs estavam reunidos no grande salão, o alarme do clã dos bruxos "
+        System.out.println("Capï¿½tulo II  - O roubo\n\n");
+        Digita("Em uma noite de comemoraï¿½ï¿½es onde todos os clï¿½s estavam reunidos no grande salï¿½o, o alarme do clï¿½ dos bruxos "
                 + "\necoa por todos os cantos da cidade, mostrando assim que algo muito ruim havia acontecido. Rapidamente todos "
                 + "daquela festa se apavoram e procuram pelo xerife da cidade que foi incumbido a preservar a ordem de toda vila. "
-                + "\nO xerife diz – “Reúna todos meus homens em frente à delegacia imediatamente!”",TimeUnit.MILLISECONDS, temp_dialog);
+                + "\nO xerife diz ï¿½ ï¿½Reï¿½na todos meus homens em frente ï¿½ delegacia imediatamente!ï¿½",TimeUnit.MILLISECONDS, temp_dialog);
         Digita("\n\nCom todos os homens do xerife reunidos ele faz um pronunciamento sobre o ocorrido. "
-                + "\nO xerife diz – “Vamos nos separar e descobrir o que foi levado dos bruxos, a partir de agora ninguém entra "
-                + "ou sai desta ilha”."
-                + "\nAo chegarem na região dos bruxos, logo descobrem que o item levado foi o mais valioso de toda ilha, o templo"
+                + "\nO xerife diz ï¿½ ï¿½Vamos nos separar e descobrir o que foi levado dos bruxos, a partir de agora ninguï¿½m entra "
+                + "ou sai desta ilhaï¿½."
+                + "\nAo chegarem na regiï¿½o dos bruxos, logo descobrem que o item levado foi o mais valioso de toda ilha, o templo"
                 + "\nonde estava guardada por muitos anos havia sido violado por um usurpador, mas para qualquer ser que desejasse "
-                + "\nadentra-la, precisaria primeiro decifrar o enigma escrito em língua de bruxo logo acima do portão de entrada."
+                + "\nadentra-la, precisaria primeiro decifrar o enigma escrito em lï¿½ngua de bruxo logo acima do portï¿½o de entrada."
                 ,TimeUnit.MILLISECONDS, temp_dialog);
 
         do{
             
-                 List <String> list = Arrays.asList("Pedir ajuda a um jovem bruxo que está a observar."
-                ,"Tentar resolver sozinho.","Invadir com força bruta, mas sabendo que há um feitiço de proteção.");
+                 List <String> list = Arrays.asList("Pedir ajuda a um jovem bruxo que estï¿½ a observar."
+                ,"Tentar resolver sozinho.","Invadir com forï¿½a bruta, mas sabendo que hï¿½ um feitiï¿½o de proteï¿½ï¿½o.");
                 Collections.shuffle(list);
                 
-                Digita("\nVocê tem algumas opções para resolução deste enigma:"
-                        + "\n1 – " + list.get(0)
-                        + "\n2 – " + list.get(1)
-                        + "\n3 – " + list.get(2)
-                        + "\nIndique qual caminho deseja seguir em número: ",TimeUnit.MILLISECONDS, temp_dialog);
+                Digita("\nVocï¿½ tem algumas opï¿½ï¿½es para resoluï¿½ï¿½o deste enigma:"
+                        + "\n1 ï¿½ " + list.get(0)
+                        + "\n2 ï¿½ " + list.get(1)
+                        + "\n3 ï¿½ " + list.get(2)
+                        + "\nIndique qual caminho deseja seguir em nï¿½mero: ",TimeUnit.MILLISECONDS, temp_dialog);
                 escolhacaminho = entrada.next();
                 
                 switch(escolhacaminho){
@@ -368,10 +368,10 @@ public class play {
                             escolhacaminho = caminhocerto;
                             
                         }else if(list.get(0).equals(caminhoalternativo)){
-                            Digita("\n(não consigo traduzir sozinho, pois está em uma língua desconhecida), pensou o xerife"
+                            Digita("\n(nï¿½o consigo traduzir sozinho, pois estï¿½ em uma lï¿½ngua desconhecida), pensou o xerife"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }else{
-                            Digita("\nvocê foi empurrado para trás e todos riram"
+                            Digita("\nvocï¿½ foi empurrado para trï¿½s e todos riram"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }
                         break;
@@ -380,10 +380,10 @@ public class play {
                             escolhacaminho = caminhocerto;
                             
                         }else if(list.get(1).equals(caminhoalternativo)){
-                            Digita("\n(não consigo traduzir sozinho, pois está em uma língua desconhecida), pensou o xerife"
+                            Digita("\n(nï¿½o consigo traduzir sozinho, pois estï¿½ em uma lï¿½ngua desconhecida), pensou o xerife"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }else{
-                            Digita("\nvocê foi empurrado para trás e todos riram"
+                            Digita("\nvocï¿½ foi empurrado para trï¿½s e todos riram"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }
                         break;
@@ -391,36 +391,36 @@ public class play {
                         if(list.get(2).equals(caminhocerto)){
                             escolhacaminho = caminhocerto;
                         }else if(list.get(2).equals(caminhoalternativo)){
-                            Digita("\n(não consigo traduzir sozinho, pois está em uma língua desconhecida), pensou o xerife"
+                            Digita("\n(nï¿½o consigo traduzir sozinho, pois estï¿½ em uma lï¿½ngua desconhecida), pensou o xerife"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }else{
-                            Digita("\nvocê foi empurrado para trás e todos riram"
+                            Digita("\nvocï¿½ foi empurrado para trï¿½s e todos riram"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }
                         break;
                     default:
-                            System.out.println("Opção invalida!"
+                            System.out.println("Opï¿½ï¿½o invalida!"
                                     + "\nTente novamente.");
                 }
         }while ((!(escolhacaminho.equals(caminhocerto))));
         
             Digita("\nCom a ajuda do jovem bruxo a placa foi traduzida, "
-                    + "\npara que enfim o xerife consiga prosseguir com a sua investigação" 
+                    + "\npara que enfim o xerife consiga prosseguir com a sua investigaï¿½ï¿½o" 
                     + "\nrevelando assim um novo desafio que diz:",TimeUnit.MILLISECONDS, temp_dialog);
-            Digita("\nNo caminho de casa até o templo, um mago conta 10 árvores a sua direita."
-                    + "\nApós ida ao templo, ele retorna para casa e conta 10 árvores a sua esquerda.",TimeUnit.MILLISECONDS, temp_dialog);
+            Digita("\nNo caminho de casa atï¿½ o templo, um mago conta 10 ï¿½rvores a sua direita."
+                    + "\nApï¿½s ida ao templo, ele retorna para casa e conta 10 ï¿½rvores a sua esquerda.",TimeUnit.MILLISECONDS, temp_dialog);
             
             do{
                 List<String> list = Arrays.asList("20","15","10","30","25");
                 Collections.shuffle(list);
                 
-                Digita("\nQuantas árvores ele viu no total nesse dia?"
+                Digita("\nQuantas ï¿½rvores ele viu no total nesse dia?"
                         + "\nA) " + list.get(0)
                         + "\nB) " + list.get(1)
                         + "\nC) " + list.get(2)
                         + "\nD) " + list.get(3)
                         + "\nE) " + list.get(4)
-                        + "\nQual é a Alternativa Correta:",TimeUnit.MILLISECONDS, temp_dialog);
+                        + "\nQual ï¿½ a Alternativa Correta:",TimeUnit.MILLISECONDS, temp_dialog);
                 escolhacap2 = entrada.next();
                 
                 switch (escolhacap2.toUpperCase()) {
@@ -468,7 +468,7 @@ public class play {
                             else if(!(escolhacap2.equals(enigcap2))){
                                 System.out.println("\nAlternativa Incorreta!");
                             }else{
-                              System.out.println("Opção invalida!");  
+                              System.out.println("Opï¿½ï¿½o invalida!");  
                             }
                             
                         
@@ -476,10 +476,10 @@ public class play {
                             
             }
         }while((!(escolhacap2.equalsIgnoreCase(enigcap2))));
-            Digita("\n\nAlternativa correta! Você conseguiu desfazer o feitiço de proteção!"
-                    + "\n\nPois, são as mesmas 10 árvores vistas de diferente perspectivas."
-                    + "\nNa ida, árvores estavam á direita do mago, mas na volta"
-                    + "\nquando ele estava no sentido contrário, as árvores podiam ser vista á esquerda\n",TimeUnit.MILLISECONDS, temp_dialog);
+            Digita("\n\nAlternativa correta! Vocï¿½ conseguiu desfazer o feitiï¿½o de proteï¿½ï¿½o!"
+                    + "\n\nPois, sï¿½o as mesmas 10 ï¿½rvores vistas de diferente perspectivas."
+                    + "\nNa ida, ï¿½rvores estavam ï¿½ direita do mago, mas na volta"
+                    + "\nquando ele estava no sentido contrï¿½rio, as ï¿½rvores podiam ser vista ï¿½ esquerda\n",TimeUnit.MILLISECONDS, temp_dialog);
             
             /*FIM CAP ||*/
             
@@ -500,11 +500,11 @@ public class play {
 
 		System.out.println("\nAo comparar o pelo, surge o seguinte desafio:\r\n \n"
 				+ "		\nDecifre o cÃ³digo para descobrir quem Ã© o dono do pelo: \r\n \n"
-				+ "Î© = 5   | á„¿á´¥á„½= 2  |  ã‰§â–¼ã‰§ = 3  | È£ = 1  |<(Âº) = 6 | â—?à¹‹: = 9| â—¤-.-â—¥ = 4 | â™ž = 7 | ÏŸ = 8 | å‚˜ =9\r\n"
-				+ "â™¨=10 | âœ© = 11 | à²œ=12 | à®? = 13 | ÊšÄ­Éž = 14 | â—‘ = 15 | â˜ª = 16 | â˜€ = 17 | â˜˜ = 18 | áƒš = 19\r\n"
-				+ "âŒ˜ = 20 | â?ƒ = 21 \n ");
+				+ "Î© = 5   | á„¿á´¥á„½= 2  |  ã‰§â–¼ã‰§ = 3  | È£ = 1  |<(Âº) = 6 | ï¿½?à¹‹: = 9| â—¤-.-â—¥ = 4 | â™ž = 7 | ÏŸ = 8 | å‚˜ =9\r\n"
+				+ "â™¨=10 | âœ© = 11 | à²œ=12 | ï¿½? = 13 | ÊšÄ­Éž = 14 | â—‘ = 15 | â˜ª = 16 | â˜€ = 17 | â˜˜ = 18 | áƒš = 19\r\n"
+				+ "âŒ˜ = 20 | ï¿½?ï¿½ = 21 \n ");
 
-		Digita("\nã‰§â–¼ã‰§  |  ( (â™¨ - â—¤-.-â—¥) - È£ )  |  ÊšÄ­Éž  | âŒ˜ |  È£ |  ((âœ© + áƒš) - â—?à¹‹:) |  â˜˜ |  ( â™¨+Î©) \n",TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\nã‰§â–¼ã‰§  |  ( (â™¨ - â—¤-.-â—¥) - È£ )  |  ÊšÄ­Éž  | âŒ˜ |  È£ |  ((âœ© + áƒš) - ï¿½?à¹‹:) |  â˜˜ |  ( â™¨+Î©) \n",TimeUnit.MILLISECONDS, temp_dialog);
 
 		String operacao,certo = " 3 | 5 | 14 | 20 | 1 | 21 | 18 | 15 ";//Resposta certa do desafio.
 
