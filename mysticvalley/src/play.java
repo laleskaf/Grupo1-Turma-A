@@ -198,7 +198,7 @@ public class play {
 	public static void main(String[] args) throws Exception{
 
 
-		Scanner entrada = new Scanner(System.in);
+		
 		int escolha;
 		String resposta;
 		String alternativa1 = "3";
@@ -327,17 +327,17 @@ public class play {
 			Digita("ParabÃ©ns !!!! VocÃª entrou na ilha, aqui comeÃ§a a sua histÃ³ria....."
 			+"\nBOA SORTE!!",TimeUnit.MILLISECONDS, temp_dialog);// final capitulo 1
 
-		}
+		} 
 
 
-	}
-	static void capitulo2() throws Exception{//Apartir daqui n�o esta bugado!
-		Scanner entrada = new Scanner(System.in);
+	
+	
+		
         String escolhacaminho,caminhoalternativo = "Tentar resolver sozinho.", 
                 caminhocerto = "Pedir ajuda a um jovem bruxo que est� a observar.",
                 escolhacap2,enigcap2 = "10";
         
-        System.out.println("Cap�tulo II  - O roubo\n\n");
+        System.out.println("\n Cap�tulo II  - O roubo\n\n");
         Digita("Em uma noite de comemora��es onde todos os cl�s estavam reunidos no grande sal�o, o alarme do cl� dos bruxos "
                 + "\necoa por todos os cantos da cidade, mostrando assim que algo muito ruim havia acontecido. Rapidamente todos "
                 + "daquela festa se apavoram e procuram pelo xerife da cidade que foi incumbido a preservar a ordem de toda vila. "
@@ -649,8 +649,8 @@ public class play {
 			String alternativa3Cap4 = "Bosque da Casa";
 			String alternativa4Cap4 = "Bosque do chá";
 			String alternativa5Cap4 = "Bosque do chalé";
-			List<String> urna = Arrays.asList(alternativa1Cap4, alternativa2Cap4, alternativa3Cap4, alternativa4Cap4, alternativa5Cap4);
-			Collections.shuffle(urna);
+			List<String> urna1 = Arrays.asList(alternativa1Cap4, alternativa2Cap4, alternativa3Cap4, alternativa4Cap4, alternativa5Cap4);
+			Collections.shuffle(urna1);
 			System.out.println("A assembleia havia começado, o clima estava muito tenso em Mystic Valley,\n"
 					+ " logo de cara muitos clãs junto com o próprio xerife, acusaram o clã dos centauros,\n"
 					+ " por conta do pelo ser da mesma cor e da mesma textura, quando o clã dos centauros estavam prestes a serem condenados,\n"
@@ -672,11 +672,11 @@ public class play {
 				System.out.println(" \n"
 						+ "Em um determinado ponto da sua caminhada ele tinha que escolher um caminho para continuar seguindo as pegadas,"
 						+ "pela lógica qual o próximo caminho ele deveria escolher :");
-				System.out.println("a) " + urna.get(0));
-				System.out.println("b) " + urna.get(1));
-				System.out.println("c) " + urna.get(2));
-				System.out.println("d) " + urna.get(3));
-				System.out.println("e) " + urna.get(4));
+				System.out.println("a) " + urna1.get(0));
+				System.out.println("b) " + urna1.get(1));
+				System.out.println("c) " + urna1.get(2));
+				System.out.println("d) " + urna1.get(3));
+				System.out.println("e) " + urna1.get(4));
 				System.out.print(":");
 				escolhaCap4 = entrada.next();
 				switch (escolhaCap4.toUpperCase()) {
@@ -720,7 +720,7 @@ public class play {
 			System.out.println("acerto");
 		}
 
-	}
+	}}
 	
-}
+
 
