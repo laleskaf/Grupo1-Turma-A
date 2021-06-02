@@ -331,7 +331,7 @@ public class play {
 
 
 	}
-	static void capitulo2() throws Exception{
+	static void capitulo2() throws Exception{//Apartir daqui não esta bugado!
 		String escolhacaminho,caminhoalternativo = "Tentar resolver sozinho.", 
                 caminhocerto = "Pedir ajuda a um jovem bruxo que está a observar.",
                 escolhacap2,enigcap2 = "10";
