@@ -719,8 +719,107 @@ public class play {
 			} while ((!(escolhaCap4.equalsIgnoreCase(alternativa1Cap4))));
 			System.out.println("acerto");
 		}
+		Digita("\n Capítulo V  - O monte mais alto da Ilha \n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap V
 
-	}}
+		String escolhaCap4;
+		String alternativa1Cap4 = "Bosque do Anseio";
+		String alternativa2Cap4 = "Bosque do café";
+		String alternativa3Cap4 = "Bosque da Casa";
+		String alternativa4Cap4 = "Bosque do chá";
+		String alternativa5Cap4 = "Bosque do chalé";
+		List<String> urna2 = Arrays.asList(alternativa1Cap4, alternativa2Cap4, alternativa3Cap4, alternativa4Cap4, alternativa5Cap4);
+		Collections.shuffle(urna2);
+		Digita("Após os últimos acontecimentos o jovem bruxo (detetive) e o xerife pareciam já não caminhar na mesma direção. \n"
+				+ " Enquanto o Jovem bruxo (detetive) continuava acreditando na inocência do clã dos centauros,\n"
+				+ " o xerife não aceitava que qualquer outro clã pudesse ter cometido um crime que abalou tanto a confiança de toda a Ilha.\n"
+				+ " (e todos nós sabemos que após a confiança ser perdida, uma guerra está próxima).\r\n"
+				+ "\n\n"
+				+ "Incomodado com o sentimento de desconfiança do Xerife, o Jovem bruxo (detetive) começou a pensar : "
+				+ "\n- “Eu preciso encontrar o culpado o mais rápido possível para mostrar ao xerife que eu estou certo!”\n "
+				+ "disse ele caminhando até o monte mais alto da Ilha, onde ele pudesse ver tudo de cima. \r\n"
+				+ "De Repente o jovem bruxo (detetive) que caminhava cabisbaixo começou a perceber algo diferente no chão \r\n"
+				+ "",TimeUnit.MILLISECONDS, temp_dialog);
+		
+		Digita(" ———-Oooo—\r\n"
+				+ "\r\n"
+				+ "———–(—-)—\r\n"
+				+ "\r\n"
+				+ "————)–/—-\r\n"
+				+ "\r\n"
+				+ "————(_/-\r\n"
+				+ "\r\n"
+				+ "—-oooO—-\r\n"
+				+ "\r\n"
+				+ "—-(—)—-\r\n"
+				+ "\r\n"
+				+ "—–\\–(–\r\n"
+				+ "\r\n"
+				+ "——\\_)-\r\n"
+				+ "\n \n"
+				+ "“Isso são mais pegadas?” disse alto, assustado.\r\n"
+				+ "“Mas elas são muito gran…. Só pode ser de um membro do clã dos pés grandes” complementando. \r\n"
+				+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
+		
+		do {
+			System.out.println("Enquanto o jovem bruxo seguia as pegadas ele percebeu que algumas delas estavam um pouco apagadas"
+					+ " e teria que caminhar um pouco mais até encontrar a próxima. Caminhando ele passou por três bosques :\n");
+			System.out.println("1) Bosque do Chá");
+			System.out.println("2) Bosque do Chalé");
+			System.out.println("3) Bosque do Japeri");
+			System.out.println(" \n"
+					+ "Em um determinado ponto da sua caminhada ele tinha que escolher um caminho para continuar seguindo as pegadas,"
+					+ "pela lógica qual o próximo caminho ele deveria escolher :");
+			System.out.println("a) " + urna2.get(0));
+			System.out.println("b) " + urna2.get(1));
+			System.out.println("c) " + urna2.get(2));
+			System.out.println("d) " + urna2.get(3));
+			System.out.println("e) " + urna2.get(4));
+			System.out.print(":");
+			escolhaCap4 = entrada.next();
+			switch (escolhaCap4.toUpperCase()) {
+			case "A":
+				if (urna.get(0).equals(alternativa1Cap4)) {
+					escolhaCap4 = alternativa1Cap4;
+				} else {
+					System.err.println("Incorreta");
+				}
+				break;
+			case "B":
+				if (urna.get(1).equals(alternativa1Cap4)) {
+					escolhaCap4 = alternativa1Cap4;
+				} else {
+					System.err.println("incorreta");
+				}
+				break;
+			case "C":
+				if (urna.get(2).equals(alternativa1Cap4)) {
+					escolhaCap4 = alternativa1Cap4;
+				} else {
+					System.err.println("incorreta");
+				}
+				break;
+			case "D":
+				if (urna.get(3).equals(alternativa1Cap4)) {
+					escolhaCap4 = alternativa1Cap4;
+				} else {
+					System.err.println("incorreta");
+				}
+				break;
+			case "E":
+				if (urna.get(4).equals(alternativa1Cap4)) {
+					escolhaCap4 = alternativa1Cap4;
+				} else {
+					System.err.println("incorreta");
+				}
+				break;
+			}
+		} while ((!(escolhaCap4.equalsIgnoreCase(alternativa1Cap4))));
+		Digita("Muito bem!! Parece que esta no caminho certo,\n"
+				+ "Seguindo as pegadas, o jovem bruxo de longe avista um casebre abandonado no meio da mata…\r\n"
+				+ "\n" ,TimeUnit.MILLISECONDS, temp_dialog);
+	}
+
+	}
 	
 
 
