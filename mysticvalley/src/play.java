@@ -801,7 +801,7 @@ public class play {
 			unit.sleep(tempo_mensagem);
 		}
 	}
-	static int temp_dialog = 12, temp_narrativa = 150, temp_quest = 10;
+	static int temp_dialog = 9, temp_narrativa = 150, temp_quest = 7;
 
 	static Scanner entrada = new Scanner(System.in);//Scanner global.
 	static void opc4()throws Exception {
