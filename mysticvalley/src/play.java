@@ -3,7 +3,8 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 
 public class play {
 
@@ -17,7 +18,72 @@ public class play {
 	static int temp_dialog =30, temp_narrativa = 150, temp_transicao = 25;
 
 	static Scanner entrada = new Scanner(System.in);//Scanner global.
+    static void opc4()throws Exception {
+        Digita("ì Boa noite a todos, reuni vocÍs para anunciar o culpado do roubo do artefato,\n"
+                + " nossa primeira pista como todos sabem foi um pelo achado dos minotauros,\n"
+                + " nunca descartamos eles como suspeitos, porem para ter uma visao melhor da ilha estava indo ao monte mais alto,\n"
+                + " no caminho achei pegadas para um casebre antigo,\n"
+                + " la dentro havia registros de tuneis secretos do grande salao que o ladr„o usou para roubar o artefato,\n"
+                + " e tambem achei um corpo de um pÈ grandeî\n"
+                + "   todos ficaram chocados e absmados, È raro haver um assassinato na ilha, continuou o detetiveÖ\n"
+                + " ì e tambem a pista principal para solucionar o caso,\n"
+                + " o que aconteceu foi que inicialmente um membro dos pÈs grandes junto com o xerife estavam planejando o roubo,\n"
+                + " depois que terminaram de planejar o xerife assassinou o pÈ grande por seguranÁa,\n"
+                + " depois de roubar o artefato tentou incriminar os minotauros para nao ser pegoî\n"
+                + " e complementou mostrando o distintivo do xerife. O xerife ficou com uma cara assustada,\n"
+                + " continuou o detetive...  ì Dito tudo isso, minha conclus„o final È que o prÛprio xerife de vocÍs È o grande respons·vel por esse roubo!! î \n"
+                + "Guardas de imediato foram e prenderam o xerife na pior sela de  Mystic Valley,\n"
+                + " a sela do subsolo, dias depois o artefato foi encontrado e protegido com a melhor seguranÁa possÌvel. \n"
+                + "A cidade ficou em choque com o acontecido, mas mesmo com tudo isso a paz voltar· a prosperar e todos na ilha continuar„o protegidos e felizes.",TimeUnit.MILLISECONDS, temp_dialog);
+    }
 
+    static void opc1()throws Exception {
+        Digita("ìBoa noite a todos, reuni vocÍs para anunciar o culpado do roubo do artefato,\n"
+                + " nossa primeira e ˙nica pista como todos sabem foi um pelo achado,\n "
+                + "nunca descartamos os lobisomens e os centauros  como suspeitos, fui atr·s de mais pistas,\n"
+                + " tentei entender  melhor mas a minha conclus„o sempre era a mesma,\n"
+                + " com a ajuda do xerife decidi que o culpado do roubo È o cl„ dos lobisomens !! î\n"
+                + " completou o detetive dizendo ì e tambÈm achei um corpo em um casebre antigo, o corpo era do cl„ dos pÈs grandes,\n"
+                + " vou iniciar outra investigaÁ„o para saber o que houve.î\n"
+                + "Todos ficaram em choque e com raiva ao mesmo tempo, com isso o cl„ dos lobisomens foram banidos da ilha para sempre,\n "
+                + "1 dia depois o xerife fugiu da ilha e o artefato nunca foi achado. \n\n"
+                + "O culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
+    }
+
+    static void opc2()throws Exception {
+        Digita(" ìBoa noite a todos, reuni vocÍs para  anunciar que irei largar o caso,\n"
+                + " n„o h· provas suficientes para incriminar e declarar alguÈm como culpado,\n"
+                + " foi um desafio enorme para mim e peÁo desculpas por n„o conseguir a recuperar o artefato,\n "
+                + "o xerife ir· continuar com o processo da investigaÁ„o, irei embora da ilha ao amanhecer.î\n"
+                + "Todos da ilha ficaram decepcionados e chateados com o bruxo, eles estavam muito confiantes nele.\n"
+                + "ApÛs o bruxo deixar a ilha o xerife fugiu 1 dia depois e o artefato nunca foi achado.\n\n"
+                + "O culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
+    }
+
+    static void opc3()throws Exception {
+        Digita("ìBoa noite a todos, reuni vocÍs para anunciar que a investigaÁ„o a partir de agora ser· mais\n"
+                + " rÌgida e rigorosa, irei interrogar TODOS a partir de agora, a partir de amanh„ vai comeÁar\n"
+                + " um toque de recolher quando o sol se pÙr e eu quero acesso a todos os locais de cada cl„,\n"
+                + " a investigaÁ„o est· muito complicada, n„o h· muitas pistas, por isso as novas medidas!î \n"
+                + "Mesmo com as novas medidas adotadas, nenhuma outra pista foi achada,\n"
+                + " 2 dias depois o xerife abandonou a ilha e o artefato nunca foi achado.\n\n"
+                + "O culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
+    }
+
+    static void opc5()throws Exception {
+        
+    
+        Digita("ìBoa noite a todos, reuni vocÍs para anunciar o culpado do roubo do artefato, nossa primeira"
+                + " e ˙nica pista como todos sabem foi um pelo achado dos centauros, nunca descartamos"
+                + " ele como suspeitos, fui atr·s de mais pistas, tentei entender o melhor mas a minha"
+                + " conclus„o sempre era a mesma, com a ajuda do xerife decidi que o culpado do roubo"
+                + " È o cl„ dos centauros !! î completou o detetive dizendo ì e tambÈm achei um corpo"
+                + " em um casebre antigo, o corpo era do cl„ dos pÈs grandes, vou iniciar outra"
+                + " investigaÁ„o para saber o que houve.î\n"
+                + "Todos ficaram em choque e com raiva ao mesmo tempo, com isso o cl„ dos centauros foram"
+                + " banidos da ilha para sempre, 1 dia depois o xerife fugiu da ilha e o artefato nunca foi achado. \n\n"
+                + "O culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
+    }
 
 	static float entradaDados() {
 		float n;//Declarando n como variavel local	
@@ -196,6 +262,13 @@ public class play {
 
 
 	public static void main(String[] args) throws Exception{
+            
+            OutputStreamWriter bufferOut = new OutputStreamWriter(
+                               new FileOutputStream("c:\\temp\\acentos.txt"),"UTF-8");
+
+		bufferOut.write("acento agudo: ·ÈÌÛ˙\n");
+		bufferOut.write("acento circunflexo: ‚ÍÓÙ˚\n");
+		bufferOut.write("fim");
 
 
 		
@@ -339,33 +412,33 @@ public class play {
 	
 		
         String escolhacaminho,caminhoalternativo = "Tentar resolver sozinho.", 
-                caminhocerto = "Pedir ajuda a um jovem bruxo que estÔøΩ a observar.",
+                caminhocerto = "Pedir ajuda a um jovem bruxo que est· a observar.",
                 escolhacap2,enigcap2 = "10";
         
-        System.out.println("\n CapÔøΩtulo II  - O roubo\n\n");
-        Digita("Em uma noite de comemoraÔøΩÔøΩes onde todos os clÔøΩs estavam reunidos no grande salÔøΩo, o alarme do clÔøΩ dos bruxos "
+        System.out.println("CapÌtulo II  - O roubo\n\n");
+        Digita("Em uma noite de comemoraÁıes onde todos os cl„s estavam reunidos no grande sal„o, o alarme do cl„ dos bruxos "
                 + "\necoa por todos os cantos da cidade, mostrando assim que algo muito ruim havia acontecido. Rapidamente todos "
                 + "daquela festa se apavoram e procuram pelo xerife da cidade que foi incumbido a preservar a ordem de toda vila. "
-                + "\nO xerife diz ÔøΩ ÔøΩReÔøΩna todos meus homens em frente ÔøΩ delegacia imediatamente!ÔøΩ",TimeUnit.MILLISECONDS, temp_dialog);
+                + "\nO xerife diz ñ ìRe˙na todos meus homens em frente ‡ delegacia imediatamente!î",TimeUnit.MILLISECONDS, temp_dialog);
         Digita("\n\nCom todos os homens do xerife reunidos ele faz um pronunciamento sobre o ocorrido. "
-                + "\nO xerife diz ÔøΩ ÔøΩVamos nos separar e descobrir o que foi levado dos bruxos, a partir de agora ninguÔøΩm entra "
-                + "ou sai desta ilhaÔøΩ."
-                + "\nAo chegarem na regiÔøΩo dos bruxos, logo descobrem que o item levado foi o mais valioso de toda ilha, o templo"
+                + "\nO xerife diz ñ ìVamos nos separar e descobrir o que foi levado dos bruxos, a partir de agora ninguÈm entra "
+                + "ou sai desta ilhaî."
+                + "\nAo chegarem na regi„o dos bruxos, logo descobrem que o item levado foi o mais valioso de toda ilha, o templo"
                 + "\nonde estava guardada por muitos anos havia sido violado por um usurpador, mas para qualquer ser que desejasse "
-                + "\nadentra-la, precisaria primeiro decifrar o enigma escrito em lÔøΩngua de bruxo logo acima do portÔøΩo de entrada."
+                + "\nadentra-la, precisaria primeiro decifrar o enigma escrito em lÌngua de bruxo logo acima do port„o de entrada."
                 ,TimeUnit.MILLISECONDS, temp_dialog);
 
         do{
             
-                 List <String> list = Arrays.asList("Pedir ajuda a um jovem bruxo que estÔøΩ a observar."
-                ,"Tentar resolver sozinho.","Invadir com forÔøΩa bruta, mas sabendo que hÔøΩ um feitiÔøΩo de proteÔøΩÔøΩo.");
+                 List <String> list = Arrays.asList("Pedir ajuda a um jovem bruxo que est· a observar."
+                ,"Tentar resolver sozinho.","Invadir com forÁa bruta, mas sabendo que h· um feitiÁo de proteÁ„o.");
                 Collections.shuffle(list);
                 
-                Digita("\nVocÔøΩ tem algumas opÔøΩÔøΩes para resoluÔøΩÔøΩo deste enigma:"
-                        + "\n1 ÔøΩ " + list.get(0)
-                        + "\n2 ÔøΩ " + list.get(1)
-                        + "\n3 ÔøΩ " + list.get(2)
-                        + "\nIndique qual caminho deseja seguir em nÔøΩmero: ",TimeUnit.MILLISECONDS, temp_dialog);
+                Digita("\nVocÍ tem algumas opÁıes para resoluÁ„o deste enigma:"
+                        + "\n1 ñ " + list.get(0)
+                        + "\n2 ñ " + list.get(1)
+                        + "\n3 ñ " + list.get(2)
+                        + "\nIndique qual caminho deseja seguir em n˙mero: ",TimeUnit.MILLISECONDS, temp_dialog);
                 escolhacaminho = entrada.next();
                 
                 switch(escolhacaminho){
@@ -374,10 +447,11 @@ public class play {
                             escolhacaminho = caminhocerto;
                             
                         }else if(list.get(0).equals(caminhoalternativo)){
-                            Digita("\n(nÔøΩo consigo traduzir sozinho, pois estÔøΩ em uma lÔøΩngua desconhecida), pensou o xerife"
+                            Digita("\n(n„o consigo traduzir sozinho, pois est· em uma lÌngua desconhecida), pensou o xerife"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
+                            break;
                         }else{
-                            Digita("\nvocÔøΩ foi empurrado para trÔøΩs e todos riram"
+                            Digita("\nvocÍ foi empurrado para tr·s e todos riram"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }
                         break;
@@ -386,10 +460,10 @@ public class play {
                             escolhacaminho = caminhocerto;
                             
                         }else if(list.get(1).equals(caminhoalternativo)){
-                            Digita("\n(nÔøΩo consigo traduzir sozinho, pois estÔøΩ em uma lÔøΩngua desconhecida), pensou o xerife"
+                            Digita("\n(n„o consigo traduzir sozinho, pois est· em uma lÌngua desconhecida), pensou o xerife"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }else{
-                            Digita("\nvocÔøΩ foi empurrado para trÔøΩs e todos riram"
+                            Digita("\nvocÍ foi empurrado para tr·s e todos riram"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }
                         break;
@@ -397,36 +471,36 @@ public class play {
                         if(list.get(2).equals(caminhocerto)){
                             escolhacaminho = caminhocerto;
                         }else if(list.get(2).equals(caminhoalternativo)){
-                            Digita("\n(nÔøΩo consigo traduzir sozinho, pois estÔøΩ em uma lÔøΩngua desconhecida), pensou o xerife"
+                            Digita("\n(n„o consigo traduzir sozinho, pois est· em uma lÌngua desconhecida), pensou o xerife"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }else{
-                            Digita("\nvocÔøΩ foi empurrado para trÔøΩs e todos riram"
+                            Digita("\nvocÍ foi empurrado para tr·s e todos riram"
                                     + "\ntente novamente!\n",TimeUnit.MILLISECONDS, temp_dialog);
                         }
                         break;
                     default:
-                            System.out.println("OpÔøΩÔøΩo invalida!"
+                            System.out.println("OpÁ„o invalida!"
                                     + "\nTente novamente.");
                 }
         }while ((!(escolhacaminho.equals(caminhocerto))));
         
             Digita("\nCom a ajuda do jovem bruxo a placa foi traduzida, "
-                    + "\npara que enfim o xerife consiga prosseguir com a sua investigaÔøΩÔøΩo" 
+                    + "\npara que enfim o xerife consiga prosseguir com a sua investigaÁ„o" 
                     + "\nrevelando assim um novo desafio que diz:",TimeUnit.MILLISECONDS, temp_dialog);
-            Digita("\nNo caminho de casa atÔøΩ o templo, um mago conta 10 ÔøΩrvores a sua direita."
-                    + "\nApÔøΩs ida ao templo, ele retorna para casa e conta 10 ÔøΩrvores a sua esquerda.",TimeUnit.MILLISECONDS, temp_dialog);
+            Digita("\nNo caminho de casa atÈ o templo, um mago conta 10 ·rvores a sua direita."
+                    + "\nApÛs ida ao templo, ele retorna para casa e conta 10 ·rvores a sua esquerda.",TimeUnit.MILLISECONDS, temp_dialog);
             
             do{
                 List<String> list = Arrays.asList("20","15","10","30","25");
                 Collections.shuffle(list);
                 
-                Digita("\nQuantas ÔøΩrvores ele viu no total nesse dia?"
+                Digita("\nQuantas ·rvores ele viu no total nesse dia?"
                         + "\nA) " + list.get(0)
                         + "\nB) " + list.get(1)
                         + "\nC) " + list.get(2)
                         + "\nD) " + list.get(3)
                         + "\nE) " + list.get(4)
-                        + "\nQual ÔøΩ a Alternativa Correta:",TimeUnit.MILLISECONDS, temp_dialog);
+                        + "\nQual È a Alternativa Correta:",TimeUnit.MILLISECONDS, temp_dialog);
                 escolhacap2 = entrada.next();
                 
                 switch (escolhacap2.toUpperCase()) {
@@ -474,7 +548,7 @@ public class play {
                             else if(!(escolhacap2.equals(enigcap2))){
                                 System.out.println("\nAlternativa Incorreta!");
                             }else{
-                              System.out.println("OpÔøΩÔøΩo invalida!");  
+                              System.out.println("OpÁ„o invalida!");  
                             }
                             
                         
@@ -482,13 +556,10 @@ public class play {
                             
             }
         }while((!(escolhacap2.equalsIgnoreCase(enigcap2))));
-            Digita("\n\nAlternativa correta! VocÔøΩ conseguiu desfazer o feitiÔøΩo de proteÔøΩÔøΩo!"
-                    + "\n\nPois, sÔøΩo as mesmas 10 ÔøΩrvores vistas de diferente perspectivas."
-                    + "\nNa ida, ÔøΩrvores estavam ÔøΩ direita do mago, mas na volta"
-                    + "\nquando ele estava no sentido contrÔøΩrio, as ÔøΩrvores podiam ser vista ÔøΩ esquerda\n",TimeUnit.MILLISECONDS, temp_dialog);
-            
-            /*FIM CAP ||*/
-            
+            Digita("\n\nAlternativa correta! VocÍ conseguiu desfazer o feitiÁo de proteÁ„o!"
+                    + "\n\nPois, s„o as mesmas 10 ·rvores vistas de diferente perspectivas."
+                    + "\nNa ida, ·rvores estavam · direita do mago, mas na volta"
+                    + "\nquando ele estava no sentido contr·rio, as ·rvores podiam ser vista · esquerda\n",TimeUnit.MILLISECONDS, temp_dialog);
             
             /*FIM CAP ||*/
             
@@ -646,7 +717,7 @@ public class play {
 
 
 			}
-			Digita("Cap√≠tulo IV - O √Ålibi\n",TimeUnit.MILLISECONDS, temp_dialog);//In√≠cio Cap IV
+			Digita("Cap√≠tulo IV - O √?libi\n",TimeUnit.MILLISECONDS, temp_dialog);//In√≠cio Cap IV
 
 			String escolhaCap4;
 			String alternativa1Cap4 = "Bosque do Anseio";
@@ -740,7 +811,7 @@ public class play {
 				+ " (e todos n√≥s sabemos que ap√≥s a confian√ßa ser perdida, uma guerra est√° pr√≥xima).\r\n"
 				+ "\n\n"
 				+ "Incomodado com o sentimento de desconfian√ßa do Xerife, o Jovem bruxo (detetive) come√ßou a pensar : "
-				+ "\n- ‚ÄúEu preciso encontrar o culpado o mais r√°pido poss√≠vel para mostrar ao xerife que eu estou certo!‚Äù\n "
+				+ "\n- ‚ÄúEu preciso encontrar o culpado o mais r√°pido poss√≠vel para mostrar ao xerife que eu estou certo!‚Ä?\n "
 				+ "disse ele caminhando at√© o monte mais alto da Ilha, onde ele pudesse ver tudo de cima. \r\n"
 				+ "De Repente o jovem bruxo (detetive) que caminhava cabisbaixo come√ßou a perceber algo diferente no ch√£o \r\n"
 				+ "",TimeUnit.MILLISECONDS, temp_dialog);
@@ -761,8 +832,8 @@ public class play {
 				+ "\r\n"
 				+ "‚Äî‚Äî\\_)-\r\n"
 				+ "\n \n"
-				+ "‚ÄúIsso s√£o mais pegadas?‚Äù disse alto, assustado.\r\n"
-				+ "‚ÄúMas elas s√£o muito gran‚Ä¶. S√≥ pode ser de um membro do cl√£ dos p√©s grandes‚Äù complementando. \r\n"
+				+ "‚ÄúIsso s√£o mais pegadas?‚Ä? disse alto, assustado.\r\n"
+				+ "‚ÄúMas elas s√£o muito gran‚Ä¶. S√≥ pode ser de um membro do cl√£ dos p√©s grandes‚Ä? complementando. \r\n"
 				+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
 		
 		do {
@@ -822,9 +893,140 @@ public class play {
 		Digita("Muito bem!! Parece que esta no caminho certo,\n"
 				+ "Seguindo as pegadas, o jovem bruxo de longe avista um casebre abandonado no meio da mata‚Ä¶\r\n"
 				+ "\n" ,TimeUnit.MILLISECONDS, temp_dialog);
-	}
+                
+                 
+                  
+        
+        String opc1 = "CULPAR O CLA DOS LOBISOMENS";
 
+        String opc2 = "ABANDONAR O CASO";
+
+        String opc3 = "TOMAR MEDIDAS MAIS RIGIDAS";
+
+        String opc4 = "CULPAR O XERIFE PELO ROUBO";
+
+        String opc5 = "CULPA O CLA DOS CENTAUROS";
+
+        List<String> urna3 = Arrays.asList(opc1, opc2, opc3, opc4, opc5);
+        Collections.shuffle(urna3);
+
+        Digita ("O jovem bruxo estava muito tenso e pensativo sobre o que iria achar no casebre,\n"
+                + " chegando no casebre o bruxo sentia um forte odor que estava o deixando tonto porÈm isso \n"
+                + "n„o o impediu de continuar a investigaÁ„o no casebre, atÈ que ele encontrou uma estranha \n"
+                + "porta azul com um sÌmbolo estranho, ele foi se aproximando cada vez mais da porta e cada\n "
+                + "vez mais ele sentia um formigamento em suas pernas, quando o bruxo abriu a porta ele encontrou\n"
+                + " o motivo do forte odor.\n" 
+                +" Era um corpo de um membro do cl„ dos PÈs grandes, logo o bruxo falou :\n" 
+                +" ìUm assassinato nessa ilha ?? Estranhoî\n" 
+                +"O bruxo foi investigando mais a estranha sala atÈ que encontrou registros de t˙neis antigos\n"
+                + " e secretos que havia  no grande sal„o, logo o bruxo ja relacionou o assassinato com o grande\n"
+                + " roubo, invsetigando mais a fundo a sala achou algo muito estranho e familiar, era o distintivo\n"
+                + " do xerife da ilha, o bruxo ficou pensativo e muito assustado, comeÁou a criar teorias em sua cabeÁa.\n"
+                + " Mas ser· que o xerife seria capaz de trair a todos na ilha ?\n" 
+                + "O bruxo foi atÈ o gabinete do xerife para lhe fazer perguntas, porÈm ele foi cauteloso, o bruxo\n"
+                + " fez a primeira pergunta:\n\n"
+                + "- Eu estava aqui pensandoÖ O cl„ dos PÈs grandes tem um histÛrico de crimes aqui na ilha ? ì\n"
+                + "- ìN„o, desde que eu comecei nesse cargo aqui na ilha nunca tive problemas com eles, mas s„o \n"
+                + " muito ambiciosos, querem ser os melhores em tudo, atÈ em poder... .î disse o xerife \n" 
+                +"- ì E os lobisomens? J· teve algum problema com eles ? ì disse logo em seguida o xerife.\n" 
+                +"- ì Problemas sempre tive, em noite de lua cheia fazem coisas sem pensar e ficam muito agressivos. î \n" 
+                +"- ì Hmmm entendo, E o senhor sabe de algum casebre antigo no monte ??\n" 
+                +"Xerife respirouÖ. pensouÖ e respondeu : ìN„o, fui poucas vezes ao monte e nunca vi nada alem de fadas,\n"
+                + " ·rvores e gnomos.î\n" 
+                +"O bruxo comeÁou a suspeitar que o xerife estaria mentindo, ele estava agindo de uma forma diferente\n"
+                + " do normal, estava suando, nervoso e apreensivo.\n "
+                + "Ent„o fez a principal pergunta em tom mais alto e firme: \n" 
+                +"- ì Xerife, vocÍ poderia mostrar o seu distintivo por favor!î\n" 
+                +"- ì Aonde vocÍ est· querendo chegar com isso BRUXO??î disse o xerife.\n" 
+                +"- ì Por favor, mostre !î disse o bruxo em tom grosseiro.\n" 
+                +"- ì Eu o perdi, a uma semana mais ou menosî disse o xerife\n" 
+                +"- ì AH, ent„o vocÍ perdeu, tudo bem ! Re˙na todos os cl„s no grande sal„o em 10 minutos, j· sei quem\n"
+                + " È o verdadeiro culpado.î disse o bruxo, e em seguida saiu do gabinete.\n" 
+                +" O bruxo estava nervoso, nunca teve um caso t„o complicado para solucionar, ele estava em d˙vida por\n"
+                + " dentro se estava fazendo o certo, se estava no caminho certo ou n„o, se o culpado era o xerife,\n"
+                + " se era os minotauros ou nenhum desses.",TimeUnit.MILLISECONDS, temp_dialog);
+
+        
+        Digita("\n\nO destino da ilha est· nas suas m„os"
+        +"\nQual decis„o vocÍ ir· tomar???? "
+        +"\na) " + urna.get(0)
+        +"\nb) " + urna.get(1)
+        +"\nc) " + urna.get(2)
+        +"\nd) " + urna.get(3)
+        +"\ne) " + urna.get(4),TimeUnit.MILLISECONDS, temp_dialog);
+        
+        String decisaoCap6 = entrada.next();
+        switch (decisaoCap6.toLowerCase()) {
+            case "a":
+
+                if (urna.get(0).equals(opc1)) {
+                    opc1();
+                } else if (urna.get(0).equals(opc2)) {
+                    opc2();
+                } else if (urna.get(0).equals(opc3)) {
+                    opc3();
+                } else if (urna.get(0).equals(opc4)) {
+                    opc4();
+                } else if (urna.get(0).equals(opc5)) {
+                    opc5();
+                }
+                break;
+            case "b":
+                if (urna.get(1).equals(opc1)) {
+                    opc1();
+                } else if (urna.get(1).equals(opc2)) {
+                    opc2();
+                } else if (urna.get(1).equals(opc3)) {
+                    opc3();
+                } else if (urna.get(1).equals(opc4)) {
+                    opc4();
+                } else if (urna.get(1).equals(opc5)) {
+                    opc5();
+                }
+                break;
+            case "c":
+                if (urna.get(2).equals(opc1)) {
+                    opc1();
+                } else if (urna.get(2).equals(opc2)) {
+                    opc2();
+                } else if (urna.get(2).equals(opc3)) {
+                    opc3();
+                } else if (urna.get(2).equals(opc4)) {
+                    opc4();
+                } else if (urna.get(2).equals(opc5)) {
+                    opc5();
+                }
+                break;
+            case "d":
+                if (urna.get(3).equals(opc1)) {
+                    opc1();
+                } else if (urna.get(3).equals(opc2)) {
+                    opc2();
+                } else if (urna.get(3).equals(opc3)) {
+                    opc3();
+                } else if (urna.get(3).equals(opc4)) {
+                    opc4();
+                } else if (urna.get(3).equals(opc5)) {
+                    opc5();
+                }
+                break;
+            case "e":
+                if (urna.get(4).equals(opc1)) {
+                    opc1();
+                } else if (urna.get(4).equals(opc2)) {
+                    opc2();
+                } else if (urna.get(4).equals(opc3)) {
+                    opc3();
+                } else if (urna.get(4).equals(opc4)) {
+                    opc4();
+                } else if (urna.get(4).equals(opc5)) {
+                    opc5();
+                }
+
+        }
 	}
+}
 	
+
 
 
