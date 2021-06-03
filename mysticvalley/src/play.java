@@ -763,11 +763,85 @@ public class play {
 						System.out.println("Tente novamente! \n");
 
 				}while(!(culpado.equals(correto)));
-
-
+				
+				System.out.println("Capítulo IV  - O Álibi \r\n");
+		        String alternativa1Cap4 = " Centauro";
+		        String alternativa2Cap4 = " Humano";
+		        String alternativa3Cap4 = "Minotauro";
+		        String alternativa4Cap4 = " Caminho sem pegadas";
+		        String alternativa5Cap4 = " Pés Grandes";
+		        String escolhaCap4;
+		        List<String> urna4 = Arrays.asList(alternativa1Cap4, alternativa2Cap4, alternativa3Cap4, alternativa4Cap4, alternativa5Cap4);
+		        Collections.shuffle(urna4);
+		        System.out.println("À assembleia havia começado, o clima estava muito tenso em Mystic Valley,\n"
+		                + " logo de cara muitos clãs junto com o próprio xerife, acusaram o clã dos centauros,\n"
+		                + " por conta do pelo ser da mesma cor e da mesma textura, quando o clã dos centauros estavam prestes a serem condenados,\n"
+		                + " o jovem bruxo detetive que o xerife havia pedido ajuda, chega na assembleia e diz:\n\n");
+		        System.out.println("Bruxo:   - Não foram os centauros, eu estive durante a semana toda e estive na noite do roubo,/\n "
+		                + "junto com o clã dos centauros, eu acredito que quem roubou, colocou os pelos de centauros, para incrimina-los.");
+		        System.out.println("Todos na assembleia ficam pensativos, e decidem concordar com o jovem bruxo, menos o xerife,"
+		                + " que ainda tem suas ressalvas com aquela clã, devido a confusões em que ele já se envolveu antes com o clã de centauros,\n"
+		                + " e então o jovem bruxo e o xerife saem para ir atrás do verdadeiro culpado.\n ");
+		        System.out.println(" então o jovem bruxo começa os interrogatórios por toda Mystic Valley,\n "
+		                + "enquanto o xerife parece estar bem incomodado com as atitudes do bruxo,\n"
+		                + " o xerife então decide ir a cena do roubo sozinho. O bruxo então decide ir atrás do xerife discretamente .\n");
+		   
+				do {
+		            System.out.println("Após pouco mais de 3 minutos de perseguição o bruxo  perdeu o xerife de vista,\n"
+		                    + " detetive foi tentar achar vestígios do caminho dele.\n"
+		                    + " Ele achou um 4 caminhos com pegadas diferentes, o primeiro caminho era pegadas de centauros,\n "
+		                    + "o segundo caminho era pegadas de humano, terceiro caminho era pegadas de minotauros e o quarto caminho pegadas de pés grandes.\n"
+		                    + "  Qual o caminho certo a seguir ?\n");
+		            System.out.println("a) " + urna4.get(0));
+		            System.out.println("b) " + urna4.get(1));
+		            System.out.println("c) " + urna4.get(2));
+		            System.out.println("d) " + urna4.get(3));
+		            System.out.println("e) " + urna4.get(4));
+		            System.out.print(":");
+		            escolhaCap4 = entrada.next();
+		            switch (escolhaCap4.toUpperCase()) {
+		                case "A":
+		                    if (urna4.get(0).equals(alternativa2Cap4)) {
+		                        escolhaCap4 = alternativa2Cap4;
+		                    } else {
+		                        System.err.println("Incorreta");
+		                    }
+		                    break;
+		                case "B":
+		                    if (urna4.get(1).equals(alternativa2Cap4)) {
+		                        escolhaCap4 = alternativa2Cap4;
+		                    } else {
+		                        System.err.println("incorreta");
+		                    }
+		                    break;
+		                case "C":
+		                    if (urna4.get(2).equals(alternativa2Cap4)) {
+		                        escolhaCap4 = alternativa2Cap4;
+		                    } else {
+		                        System.err.println("incorreta");
+		                    }
+		                    break;
+		                case "D":
+		                    if (urna4.get(3).equals(alternativa2Cap4)) {
+		                        escolhaCap4 = alternativa2Cap4;
+		                    } else {
+		                        System.err.println("incorreta");
+		                    }
+		                    break;
+		                case "E":
+		                    if (urna4.get(4).equals(alternativa2Cap4)) {
+		                        escolhaCap4 = alternativa2Cap4;
+		                    } else {
+		                        System.err.println("incorreta");
+		                    }
+		                    break;
+		            }
+		        } while ((!(escolhaCap4.equalsIgnoreCase(alternativa2Cap4))));
+		        System.out.println("acerto");
+		    }//Fim Cap 4
 
 			}
-			Digita("Capítulo IV - O �?libi\n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap IV
+			Digita("Capítulo V  - O monte mais alto da Ilha\r\n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap IV
 
 			String escolhaCap4;
 			String alternativa1Cap4 = "Bosque do Anseio";
@@ -846,240 +920,240 @@ public class play {
 				}
 			} while ((!(escolhaCap4.equalsIgnoreCase(alternativa1Cap4))));
 			System.out.println("acerto");
+			Digita("\n Capítulo V  - O monte mais alto da Ilha \n",TimeUnit.MILLISECONDS,temp_dialog);//Início Cap V
+
+
+			String answer;
+			String option1 = "Bosque do Anseio";
+			String option2 = "Bosque do Café";
+			String option3 = "Bosque da Casa";
+			String option4 = "Bosque do Chá";
+			String option5 = "Bosque do Chalé";
+			List<String> casket = Arrays.asList(option1, option2, option3, option4, option5);
+			Collections.shuffle(casket);
+			
+			Digita("Após os últimos acontecimentos o jovem bruxo (detetive) e o xerife pareciam já não caminhar na mesma direção. \n"
+					+ " Enquanto o Jovem bruxo (detetive) continuava acreditando na inocência do clã dos centauros,\n"
+					+ " o xerife não aceitava que qualquer outro clã pudesse ter cometido um crime que abalou tanto a confiança de toda a Ilha.\n"
+					+ " (e todos nós sabemos que após a confiança ser perdida, uma guerra está próxima).\r\n"
+					+ "\n\n"
+					+ "Incomodado com o sentimento de desconfiança do Xerife, o Jovem bruxo (detetive) começou a pensar : "
+					+ "\n- “Eu preciso encontrar o culpado o mais rápido possível para mostrar ao xerife que eu estou certo!�?\n "
+					+ "disse ele caminhando até o monte mais alto da Ilha, onde ele pudesse ver tudo de cima. \r\n"
+					+ "De Repente o jovem bruxo (detetive) que caminhava cabisbaixo começou a perceber algo diferente no chão \r\n"
+					+ "",TimeUnit.MILLISECONDS, temp_dialog);
+			
+			Digita(" ———-Oooo—\r\n"
+					+ "\r\n"
+					+ "———–(—-)—\r\n"
+					+ "\r\n"
+					+ "————)–/—-\r\n"
+					+ "\r\n"
+					+ "————(_/-\r\n"
+					+ "\r\n"
+					+ "—-oooO—-\r\n"
+					+ "\r\n"
+					+ "—-(—)—-\r\n"
+					+ "\r\n"
+					+ "—–\\–(–\r\n"
+					+ "\r\n"
+					+ "——\\_)-\r\n"
+					+ "\n \n"
+					+ "“Isso são mais pegadas?�? disse alto, assustado.\r\n"
+					+ "“Mas elas são muito gran…. Só pode ser de um membro do clã dos pés grandes�? complementando. \r\n"
+					+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
+			
+			do {
+				Digita("Enquanto o jovem bruxo seguia as pegadas ele percebeu que algumas delas estavam um pouco apagadas\n"
+						+ " e teria que caminhar um pouco mais até encontrar a próxima. Caminhando ele passou por três bosques :\n",TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("1) Bosque do Chá",TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("2) Bosque do Chalé",TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("3) Bosque do Japeri",TimeUnit.MILLISECONDS, temp_dialog);
+				Digita(" \n"
+						+ "Em um determinado ponto da sua caminhada ele tinha que escolher um caminho para continuar seguindo as pegadas,"
+						+ "pela lógica qual o próximo caminho ele deveria escolher :",TimeUnit.MILLISECONDS, temp_dialog);
+				System.out.println("a) " + casket.get(0));
+				System.out.println("b) " + casket.get(1));
+				System.out.println("c) " + casket.get(2));
+				System.out.println("d) " + casket.get(3));
+				System.out.println("e) " + casket.get(4));
+				System.out.print(":");
+				answer = entrada.next();
+				switch (answer.toUpperCase()) {
+				case "A":
+					if (casket.get(0).equals(option1)) {
+						answer= option1;
+					} else {
+						System.err.println("Incorreta");
+					}
+					break;
+				case "B":
+					if (casket.get(1).equals(option1)) {
+						answer = option1;
+					} else {
+						System.err.println("incorreta");
+					}
+					break;
+				case "C":
+					if (casket.get(2).equals(option1)) {
+						answer = option1;
+					} else {
+						System.err.println("incorreta");
+					}
+					break;
+				case "D":
+					if (casket.get(3).equals(option1)) {
+						answer = option1;
+					} else {
+						System.err.println("incorreta");
+					}
+					break;
+				case "E":
+					if (casket.get(4).equals(option1)) {
+						answer = option1;
+					} else {
+						System.err.println("incorreta");
+					}
+					break;
+				}
+			} while ((!(answer.equalsIgnoreCase(option1))));
+			Digita("Muito bem!! Parece que esta no caminho certo,\n"
+					+ "Seguindo as pegadas, o jovem bruxo de longe avista um casebre abandonado no meio da mata…\r\n"
+					+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
+	                 
+	                  
+	        
+	        String opc1 = "CULPAR O CLA DOS LOBISOMENS";
+
+	        String opc2 = "ABANDONAR O CASO";
+
+	        String opc3 = "TOMAR MEDIDAS MAIS RIGIDAS";
+
+	        String opc4 = "CULPAR O XERIFE PELO ROUBO";
+
+	        String opc5 = "CULPA O CLA DOS CENTAUROS";
+
+	        List<String> urna3 = Arrays.asList(opc1, opc2, opc3, opc4, opc5);
+	        Collections.shuffle(urna3);
+
+	        Digita ("O jovem bruxo estava muito tenso e pensativo sobre o que iria achar no casebre,\n"
+	                + " chegando no casebre o bruxo sentia um forte odor que estava o deixando tonto por�m isso \n"
+	                + "n�o o impediu de continuar a investiga��o no casebre, at� que ele encontrou uma estranha \n"
+	                + "porta azul com um s�mbolo estranho, ele foi se aproximando cada vez mais da porta e cada\n "
+	                + "vez mais ele sentia um formigamento em suas pernas, quando o bruxo abriu a porta ele encontrou\n"
+	                + " o motivo do forte odor.\n" 
+	                +" Era um corpo de um membro do cl� dos P�s grandes, logo o bruxo falou :\n" 
+	                +" �Um assassinato nessa ilha ?? Estranho�\n" 
+	                +"O bruxo foi investigando mais a estranha sala at� que encontrou registros de t�neis antigos\n"
+	                + " e secretos que havia  no grande sal�o, logo o bruxo ja relacionou o assassinato com o grande\n"
+	                + " roubo, invsetigando mais a fundo a sala achou algo muito estranho e familiar, era o distintivo\n"
+	                + " do xerife da ilha, o bruxo ficou pensativo e muito assustado, come�ou a criar teorias em sua cabe�a.\n"
+	                + " Mas ser� que o xerife seria capaz de trair a todos na ilha ?\n" 
+	                + "O bruxo foi at� o gabinete do xerife para lhe fazer perguntas, por�m ele foi cauteloso, o bruxo\n"
+	                + " fez a primeira pergunta:\n\n"
+	                + "- Eu estava aqui pensando� O cl� dos P�s grandes tem um hist�rico de crimes aqui na ilha ? �\n"
+	                + "- �N�o, desde que eu comecei nesse cargo aqui na ilha nunca tive problemas com eles, mas s�o \n"
+	                + " muito ambiciosos, querem ser os melhores em tudo, at� em poder... .� disse o xerife \n" 
+	                +"- � E os lobisomens? J� teve algum problema com eles ? � disse logo em seguida o xerife.\n" 
+	                +"- � Problemas sempre tive, em noite de lua cheia fazem coisas sem pensar e ficam muito agressivos. � \n" 
+	                +"- � Hmmm entendo, E o senhor sabe de algum casebre antigo no monte ??\n" 
+	                +"Xerife respirou�. pensou� e respondeu : �N�o, fui poucas vezes ao monte e nunca vi nada alem de fadas,\n"
+	                + " �rvores e gnomos.�\n" 
+	                +"O bruxo come�ou a suspeitar que o xerife estaria mentindo, ele estava agindo de uma forma diferente\n"
+	                + " do normal, estava suando, nervoso e apreensivo.\n "
+	                + "Ent�o fez a principal pergunta em tom mais alto e firme: \n" 
+	                +"- � Xerife, voc� poderia mostrar o seu distintivo por favor!�\n" 
+	                +"- � Aonde voc� est� querendo chegar com isso BRUXO??� disse o xerife.\n" 
+	                +"- � Por favor, mostre !� disse o bruxo em tom grosseiro.\n" 
+	                +"- � Eu o perdi, a uma semana mais ou menos� disse o xerife\n" 
+	                +"- � AH, ent�o voc� perdeu, tudo bem ! Re�na todos os cl�s no grande sal�o em 10 minutos, j� sei quem\n"
+	                + " � o verdadeiro culpado.� disse o bruxo, e em seguida saiu do gabinete.\n" 
+	                +" O bruxo estava nervoso, nunca teve um caso t�o complicado para solucionar, ele estava em d�vida por\n"
+	                + " dentro se estava fazendo o certo, se estava no caminho certo ou n�o, se o culpado era o xerife,\n"
+	                + " se era os minotauros ou nenhum desses.",TimeUnit.MILLISECONDS, temp_dialog);
+
+	        
+	        Digita("\n\nO destino da ilha est� nas suas m�os"
+	        +"\nQual decis�o voc� ir� tomar???? "
+	        +"\na) " + urna3.get(0)
+	        +"\nb) " + urna3.get(1)
+	        +"\nc) " + urna3.get(2)
+	        +"\nd) " + urna3.get(3)
+	        +"\ne) " + urna3.get(4),TimeUnit.MILLISECONDS, temp_quest);
+	        
+	        String decisaoCap6 = entrada.next();
+	        switch (decisaoCap6.toLowerCase()) {
+	            case "a":
+
+	                if (urna3.get(0).equals(opc1)) {
+	                    opc1();
+	                } else if (urna3.get(0).equals(opc2)) {
+	                    opc2();
+	                } else if (urna3.get(0).equals(opc3)) {
+	                    opc3();
+	                } else if (urna3.get(0).equals(opc4)) {
+	                    opc4();
+	                } else if (urna3.get(0).equals(opc5)) {
+	                    opc5();
+	                }
+	                break;
+	            case "b":
+	                if (urna3.get(1).equals(opc1)) {
+	                    opc1();
+	                } else if (urna3.get(1).equals(opc2)) {
+	                    opc2();
+	                } else if (urna3.get(1).equals(opc3)) {
+	                    opc3();
+	                } else if (urna3.get(1).equals(opc4)) {
+	                    opc4();
+	                } else if (urna3.get(1).equals(opc5)) {
+	                    opc5();
+	                }
+	                break;
+	            case "c":
+	                if (urna3.get(2).equals(opc1)) {
+	                    opc1();
+	                } else if (urna3.get(2).equals(opc2)) {
+	                    opc2();
+	                } else if (urna3.get(2).equals(opc3)) {
+	                    opc3();
+	                } else if (urna3.get(2).equals(opc4)) {
+	                    opc4();
+	                } else if (urna3.get(2).equals(opc5)) {
+	                    opc5();
+	                }
+	                break;
+	            case "d":
+	                if (urna3.get(3).equals(opc1)) {
+	                    opc1();
+	                } else if (urna3.get(3).equals(opc2)) {
+	                    opc2();
+	                } else if (urna3.get(3).equals(opc3)) {
+	                    opc3();
+	                } else if (urna3.get(3).equals(opc4)) {
+	                    opc4();
+	                } else if (urna3.get(3).equals(opc5)) {
+	                    opc5();
+	                }
+	                break;
+	            case "e":
+	                if (urna3.get(4).equals(opc1)) {
+	                    opc1();
+	                } else if (urna3.get(4).equals(opc2)) {
+	                    opc2();
+	                } else if (urna3.get(4).equals(opc3)) {
+	                    opc3();
+	                } else if (urna3.get(4).equals(opc4)) {
+	                    opc4();
+	                } else if (urna3.get(4).equals(opc5)) {
+	                    opc5();
+	                }
+
 		}
-		Digita("\n Capítulo V  - O monte mais alto da Ilha \n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap V
-
-
-		String answer;
-		String option1 = "Bosque do Anseio";
-		String option2 = "Bosque do Café";
-		String option3 = "Bosque da Casa";
-		String option4 = "Bosque do Chá";
-		String option5 = "Bosque do Chalé";
-		List<String> casket = Arrays.asList(option1, option2, option3, option4, option5);
-		Collections.shuffle(casket);
 		
-		Digita("Após os últimos acontecimentos o jovem bruxo (detetive) e o xerife pareciam já não caminhar na mesma direção. \n"
-				+ " Enquanto o Jovem bruxo (detetive) continuava acreditando na inocência do clã dos centauros,\n"
-				+ " o xerife não aceitava que qualquer outro clã pudesse ter cometido um crime que abalou tanto a confiança de toda a Ilha.\n"
-				+ " (e todos nós sabemos que após a confiança ser perdida, uma guerra está próxima).\r\n"
-				+ "\n\n"
-				+ "Incomodado com o sentimento de desconfiança do Xerife, o Jovem bruxo (detetive) começou a pensar : "
-				+ "\n- “Eu preciso encontrar o culpado o mais rápido possível para mostrar ao xerife que eu estou certo!�?\n "
-				+ "disse ele caminhando até o monte mais alto da Ilha, onde ele pudesse ver tudo de cima. \r\n"
-				+ "De Repente o jovem bruxo (detetive) que caminhava cabisbaixo começou a perceber algo diferente no chão \r\n"
-				+ "",TimeUnit.MILLISECONDS, temp_dialog);
-		
-		Digita(" ———-Oooo—\r\n"
-				+ "\r\n"
-				+ "———–(—-)—\r\n"
-				+ "\r\n"
-				+ "————)–/—-\r\n"
-				+ "\r\n"
-				+ "————(_/-\r\n"
-				+ "\r\n"
-				+ "—-oooO—-\r\n"
-				+ "\r\n"
-				+ "—-(—)—-\r\n"
-				+ "\r\n"
-				+ "—–\\–(–\r\n"
-				+ "\r\n"
-				+ "——\\_)-\r\n"
-				+ "\n \n"
-				+ "“Isso são mais pegadas?�? disse alto, assustado.\r\n"
-				+ "“Mas elas são muito gran…. Só pode ser de um membro do clã dos pés grandes�? complementando. \r\n"
-				+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
-		
-		do {
-			Digita("Enquanto o jovem bruxo seguia as pegadas ele percebeu que algumas delas estavam um pouco apagadas\n"
-					+ " e teria que caminhar um pouco mais até encontrar a próxima. Caminhando ele passou por três bosques :\n",TimeUnit.MILLISECONDS, temp_dialog);
-			Digita("1) Bosque do Chá",,TimeUnit.MILLISECONDS, temp_dialog);
-			Digita("2) Bosque do Chalé",TimeUnit.MILLISECONDS, temp_dialog);
-			Digita("3) Bosque do Japeri",TimeUnit.MILLISECONDS, temp_dialog);
-			Digita(" \n"
-					+ "Em um determinado ponto da sua caminhada ele tinha que escolher um caminho para continuar seguindo as pegadas,"
-					+ "pela lógica qual o próximo caminho ele deveria escolher :",TimeUnit.MILLISECONDS, temp_dialog);
-			System.out.println("a) " + casket.get(0));
-			System.out.println("b) " + casket.get(1));
-			System.out.println("c) " + casket.get(2));
-			System.out.println("d) " + casket.get(3));
-			System.out.println("e) " + casket.get(4));
-			System.out.print(":");
-			answer = entrada.next();
-			switch (answer.toUpperCase()) {
-			case "A":
-				if (casket.get(0).equals(option1)) {
-					answer= option1;
-				} else {
-					System.err.println("Incorreta");
-				}
-				break;
-			case "B":
-				if (casket.get(1).equals(option1)) {
-					answer = option1;
-				} else {
-					System.err.println("incorreta");
-				}
-				break;
-			case "C":
-				if (casket.get(2).equals(option1)) {
-					answer = option1;
-				} else {
-					System.err.println("incorreta");
-				}
-				break;
-			case "D":
-				if (casket.get(3).equals(option1)) {
-					answer = option1;
-				} else {
-					System.err.println("incorreta");
-				}
-				break;
-			case "E":
-				if (casket.get(4).equals(option1)) {
-					answer = option1;
-				} else {
-					System.err.println("incorreta");
-				}
-				break;
-			}
-		} while ((!(answer.equalsIgnoreCase(option1))));
-		Digita("Muito bem!! Parece que esta no caminho certo,\n"
-				+ "Seguindo as pegadas, o jovem bruxo de longe avista um casebre abandonado no meio da mata…\r\n"
-				+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
-                 
-                  
-        
-        String opc1 = "CULPAR O CLA DOS LOBISOMENS";
-
-        String opc2 = "ABANDONAR O CASO";
-
-        String opc3 = "TOMAR MEDIDAS MAIS RIGIDAS";
-
-        String opc4 = "CULPAR O XERIFE PELO ROUBO";
-
-        String opc5 = "CULPA O CLA DOS CENTAUROS";
-
-        List<String> urna3 = Arrays.asList(opc1, opc2, opc3, opc4, opc5);
-        Collections.shuffle(urna3);
-
-        Digita ("O jovem bruxo estava muito tenso e pensativo sobre o que iria achar no casebre,\n"
-                + " chegando no casebre o bruxo sentia um forte odor que estava o deixando tonto por�m isso \n"
-                + "n�o o impediu de continuar a investiga��o no casebre, at� que ele encontrou uma estranha \n"
-                + "porta azul com um s�mbolo estranho, ele foi se aproximando cada vez mais da porta e cada\n "
-                + "vez mais ele sentia um formigamento em suas pernas, quando o bruxo abriu a porta ele encontrou\n"
-                + " o motivo do forte odor.\n" 
-                +" Era um corpo de um membro do cl� dos P�s grandes, logo o bruxo falou :\n" 
-                +" �Um assassinato nessa ilha ?? Estranho�\n" 
-                +"O bruxo foi investigando mais a estranha sala at� que encontrou registros de t�neis antigos\n"
-                + " e secretos que havia  no grande sal�o, logo o bruxo ja relacionou o assassinato com o grande\n"
-                + " roubo, invsetigando mais a fundo a sala achou algo muito estranho e familiar, era o distintivo\n"
-                + " do xerife da ilha, o bruxo ficou pensativo e muito assustado, come�ou a criar teorias em sua cabe�a.\n"
-                + " Mas ser� que o xerife seria capaz de trair a todos na ilha ?\n" 
-                + "O bruxo foi at� o gabinete do xerife para lhe fazer perguntas, por�m ele foi cauteloso, o bruxo\n"
-                + " fez a primeira pergunta:\n\n"
-                + "- Eu estava aqui pensando� O cl� dos P�s grandes tem um hist�rico de crimes aqui na ilha ? �\n"
-                + "- �N�o, desde que eu comecei nesse cargo aqui na ilha nunca tive problemas com eles, mas s�o \n"
-                + " muito ambiciosos, querem ser os melhores em tudo, at� em poder... .� disse o xerife \n" 
-                +"- � E os lobisomens? J� teve algum problema com eles ? � disse logo em seguida o xerife.\n" 
-                +"- � Problemas sempre tive, em noite de lua cheia fazem coisas sem pensar e ficam muito agressivos. � \n" 
-                +"- � Hmmm entendo, E o senhor sabe de algum casebre antigo no monte ??\n" 
-                +"Xerife respirou�. pensou� e respondeu : �N�o, fui poucas vezes ao monte e nunca vi nada alem de fadas,\n"
-                + " �rvores e gnomos.�\n" 
-                +"O bruxo come�ou a suspeitar que o xerife estaria mentindo, ele estava agindo de uma forma diferente\n"
-                + " do normal, estava suando, nervoso e apreensivo.\n "
-                + "Ent�o fez a principal pergunta em tom mais alto e firme: \n" 
-                +"- � Xerife, voc� poderia mostrar o seu distintivo por favor!�\n" 
-                +"- � Aonde voc� est� querendo chegar com isso BRUXO??� disse o xerife.\n" 
-                +"- � Por favor, mostre !� disse o bruxo em tom grosseiro.\n" 
-                +"- � Eu o perdi, a uma semana mais ou menos� disse o xerife\n" 
-                +"- � AH, ent�o voc� perdeu, tudo bem ! Re�na todos os cl�s no grande sal�o em 10 minutos, j� sei quem\n"
-                + " � o verdadeiro culpado.� disse o bruxo, e em seguida saiu do gabinete.\n" 
-                +" O bruxo estava nervoso, nunca teve um caso t�o complicado para solucionar, ele estava em d�vida por\n"
-                + " dentro se estava fazendo o certo, se estava no caminho certo ou n�o, se o culpado era o xerife,\n"
-                + " se era os minotauros ou nenhum desses.",TimeUnit.MILLISECONDS, temp_dialog);
-
-        
-        Digita("\n\nO destino da ilha est� nas suas m�os"
-        +"\nQual decis�o voc� ir� tomar???? "
-        +"\na) " + urna3.get(0)
-        +"\nb) " + urna3.get(1)
-        +"\nc) " + urna3.get(2)
-        +"\nd) " + urna3.get(3)
-        +"\ne) " + urna3.get(4),TimeUnit.MILLISECONDS, temp_quest);
-        
-        String decisaoCap6 = entrada.next();
-        switch (decisaoCap6.toLowerCase()) {
-            case "a":
-
-                if (urna3.get(0).equals(opc1)) {
-                    opc1();
-                } else if (urna3.get(0).equals(opc2)) {
-                    opc2();
-                } else if (urna3.get(0).equals(opc3)) {
-                    opc3();
-                } else if (urna3.get(0).equals(opc4)) {
-                    opc4();
-                } else if (urna3.get(0).equals(opc5)) {
-                    opc5();
-                }
-                break;
-            case "b":
-                if (urna3.get(1).equals(opc1)) {
-                    opc1();
-                } else if (urna3.get(1).equals(opc2)) {
-                    opc2();
-                } else if (urna3.get(1).equals(opc3)) {
-                    opc3();
-                } else if (urna3.get(1).equals(opc4)) {
-                    opc4();
-                } else if (urna3.get(1).equals(opc5)) {
-                    opc5();
-                }
-                break;
-            case "c":
-                if (urna3.get(2).equals(opc1)) {
-                    opc1();
-                } else if (urna3.get(2).equals(opc2)) {
-                    opc2();
-                } else if (urna3.get(2).equals(opc3)) {
-                    opc3();
-                } else if (urna3.get(2).equals(opc4)) {
-                    opc4();
-                } else if (urna3.get(2).equals(opc5)) {
-                    opc5();
-                }
-                break;
-            case "d":
-                if (urna3.get(3).equals(opc1)) {
-                    opc1();
-                } else if (urna3.get(3).equals(opc2)) {
-                    opc2();
-                } else if (urna3.get(3).equals(opc3)) {
-                    opc3();
-                } else if (urna3.get(3).equals(opc4)) {
-                    opc4();
-                } else if (urna3.get(3).equals(opc5)) {
-                    opc5();
-                }
-                break;
-            case "e":
-                if (urna3.get(4).equals(opc1)) {
-                    opc1();
-                } else if (urna3.get(4).equals(opc2)) {
-                    opc2();
-                } else if (urna3.get(4).equals(opc3)) {
-                    opc3();
-                } else if (urna3.get(4).equals(opc4)) {
-                    opc4();
-                } else if (urna3.get(4).equals(opc5)) {
-                    opc5();
-                }
-
         }
 	}
-}
-	
+
 
 
 
