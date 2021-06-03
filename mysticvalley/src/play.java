@@ -352,7 +352,7 @@ public class play {
 
 		String operacao,certo = " 3 | 5 | 14 | 20 | 1 | 21 | 18 | 15 ";//Resposta certa do desafio.
 
-		System.out.println("\nPara te ajudar, use calculadora: \n" );
+		 System.out.println("\nPara te ajudar, use calculadora: \n" );
 
 		String calculadora;//Variável para ver se o jogador quer utilizar dnv a calculadora.
 		do {
@@ -360,7 +360,7 @@ public class play {
 			float n1 = entradaDados();//Chama a função que pede ao jogador o primeiro dado.
 			float n2 = entradaDados();//Chama a função que pede ao jogador o segundo dado.
 			float result = controlador(op,n1,n2);//Chama a função que faz a operação.
-			System.out.println("\n\nPrecisa utilizar novamente? ");
+			//System.out.println("\n\nPrecisa utilizar novamente? ");
 			calculadora = entrada.nextLine().toUpperCase();//Recebe o que o jogador digitou e deixa tudo em Maiúsculo.
 
 		}while(calculadora.equalsIgnoreCase("SIM"));
@@ -370,7 +370,7 @@ public class play {
 
 			Collections.shuffle(emb);//Embaralha.
 
-			Digita("\n       *Quais valores foram encontrados?*        \n ",TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n       *Quais valores foram encontrados?*        \n ",TimeUnit.MILLISECONDS, temp_dialog);
 
 			Digita("\nSelecione a sequência equivalente:\n"
 
@@ -801,7 +801,7 @@ public class play {
 			unit.sleep(tempo_mensagem);
 		}
 	}
-	static int temp_dialog = 0, temp_narrativa = 150, temp_quest = 0;
+	static int temp_dialog = 12, temp_narrativa = 150, temp_quest = 10;
 
 	static Scanner entrada = new Scanner(System.in);//Scanner global.
 	static void opc4()throws Exception {
