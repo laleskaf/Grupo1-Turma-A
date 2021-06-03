@@ -3,8 +3,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
+
 
 public class play {
 
@@ -15,7 +14,7 @@ public class play {
 			unit.sleep(tempo_mensagem);
 		}
 	}
-	static int temp_dialog =0, temp_narrativa = 150, temp_transicao = 25;
+	static int temp_dialog =0, temp_narrativa = 150, temp_quest = 25;
 
 	static Scanner entrada = new Scanner(System.in);//Scanner global.
     static void opc4()throws Exception {
@@ -386,14 +385,14 @@ public class play {
 				Digita("Em um jardim: "
                                         +"\nA) todas as flores, menos duas sÃ£o rosas "
 				        +"\nB) todas as flores, menos duas sÃ£o margaridas"
-				        +"\nC) todas as flores, menos duas sÃ£o orquÃ­deas.",TimeUnit.MILLISECONDS, temp_dialog);
+				        +"\nC) todas as flores, menos duas sÃ£o orquÃ­deas.",TimeUnit.MILLISECONDS, temp_quest);
 				        
                                 Digita("Quantas flores hÃ¡ no jardim?"// desafio 1
 				+"\na) " + urna.get(0)
 				+"\nb) " + urna.get(1)
 				+"\nc) " + urna.get(2)
 				+"\nd) " + urna.get(3)
-				+"\ne) " + urna.get(4),TimeUnit.MILLISECONDS, temp_dialog);
+				+"\ne) " + urna.get(4),TimeUnit.MILLISECONDS, temp_quest);
 				System.out.print(":");
 				resposta = entrada.next();
 				switch (resposta.toUpperCase()) {
@@ -448,7 +447,7 @@ public class play {
                 caminhocerto = "Pedir ajuda a um jovem bruxo que est� a observar.",
                 escolhacap2,enigcap2 = "10";
         
-        System.out.println("Cap�tulo II  - O roubo\n\n");
+        System.out.println("\n\nCap�tulo II  - O roubo\n\n");
         Digita("Em uma noite de comemora��es onde todos os cl�s estavam reunidos no grande sal�o, o alarme do cl� dos bruxos "
                 + "\necoa por todos os cantos da cidade, mostrando assim que algo muito ruim havia acontecido. Rapidamente todos "
                 + "daquela festa se apavoram e procuram pelo xerife da cidade que foi incumbido a preservar a ordem de toda vila. "
@@ -489,7 +488,7 @@ public class play {
                         + "\n1 � " + list.get(0)
                         + "\n2 � " + list.get(1)
                         + "\n3 � " + list.get(2)
-                        + "\nIndique qual caminho deseja seguir em n�mero: ",TimeUnit.MILLISECONDS, temp_dialog);
+                        + "\nIndique qual caminho deseja seguir em n�mero: ",TimeUnit.MILLISECONDS, temp_quest);
                 escolhacaminho = entrada.next();
                 
                 switch(escolhacaminho){
@@ -551,7 +550,7 @@ public class play {
                         + "\nC) " + list.get(2)
                         + "\nD) " + list.get(3)
                         + "\nE) " + list.get(4)
-                        + "\nQual � a Alternativa Correta:",TimeUnit.MILLISECONDS, temp_dialog);
+                        + "\nQual � a Alternativa Correta:",TimeUnit.MILLISECONDS, temp_quest);
                 escolhacap2 = entrada.next();
                 
                 switch (escolhacap2.toUpperCase()) {
@@ -559,7 +558,7 @@ public class play {
 				if(list.get(0).equals(enigcap2)) {
 					escolhacap2 = enigcap2;
 				}else{
-					System.out.println("\nAlternativa Incorreta!");
+					System.err.println("\nAlternativa Incorreta!");
 				}
 				break;
 
@@ -567,7 +566,7 @@ public class play {
 				if(list.get(1).equals(enigcap2)) {
 					escolhacap2 = enigcap2;
 				}else{
-					System.out.println("\nAlternativa Incorreta!");
+					System.err.println("\nAlternativa Incorreta!");
 				}
 				
 				break;
@@ -575,14 +574,14 @@ public class play {
 				if(list.get(2).equals(enigcap2)) {
 					escolhacap2 = enigcap2;
 				}else{
-					System.out.println("\nAlternativa Incorreta!");
+					System.err.println("\nAlternativa Incorreta!");
 				}
 				break;
 			case "D": 
 				if(list.get(3).equals(enigcap2)) {
 					escolhacap2 = enigcap2;
 				}else{
-					System.out.println("\nAlternativa Incorreta!");
+					System.err.println("\nAlternativa Incorreta!");
 				}
 				break;
                         case "E": 
@@ -597,7 +596,7 @@ public class play {
                                 escolhacap2 = enigcap2;
                             }
                             else if(!(escolhacap2.equals(enigcap2))){
-                                System.out.println("\nAlternativa Incorreta!");
+                                System.err.println("\nAlternativa Incorreta!");
                             }else{
                               System.out.println("Op��o invalida!");  
                             }
@@ -617,17 +616,17 @@ public class play {
 
 		//FIM CAP II
 
-		Digita("Capítulo III - A primeira pista\n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap III
+		Digita("\nCapítulo III - A primeira pista\n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap III
 
 
-		System.out.println("\nCom isso o xerife percebe que não conseguiria solucionar este crime sem um profissional especializado no ramo da investigação.\r\n"
+		Digita("\nCom isso o xerife percebe que não conseguiria solucionar este crime sem um profissional especializado no ramo da investigação.\r\n"
 				+ "Então ele chamou um detetive para ajudá-lo a solucionar esse crime. Ao entrarem mais fundo no templo, o detetive logo encontrou a primeira pista,\r\n"
 				+ "um tufo de pelos foi encontrado caído no templo, como na ilha habita diversas criaturas diferentes, não foi possível identificar de quem era esse pelo.\r\n"
 				+ "Imediatamente o xerife propôs uma assembléia e convocou todos os clãs para debaterem de quem era o pelo e achar o culpado.\r\n"
 				+ "O pelo era amarronzado, com uma textura sedosa, bem liso. A assembléia começou, todos os clãs estavam reunidos, separados por grupos para melhor análise,\r\n"
-				+ "o xerife e detetive, foram passando de grupo em grupo, para compararem o pelo.\r\n");
+				+ "o xerife e detetive, foram passando de grupo em grupo, para compararem o pelo.\r\n"
 
-		Digita("\nDe quem era o pelo?\n",TimeUnit.MILLISECONDS, temp_dialog);
+		+"\nDe quem era o pelo?\n",TimeUnit.MILLISECONDS, temp_dialog);
 
 		System.out.println("\nAo comparar o pelo, surge o seguinte desafio:\r\n \n"
 				+ "		\nDecifre o código para descobrir quem é o dono do pelo: \r\n \n"
@@ -659,13 +658,13 @@ public class play {
 
 			Digita("\n       *Quais valores foram encontrados?*        \n ",TimeUnit.MILLISECONDS, temp_dialog);
 
-			System.out.println("\nSelecione a sequência equivalente:\n");
+			Digita("\nSelecione a sequência equivalente:\n"
 
-			System.out.println(" <A>" + emb.get(0)+"\n");//Opções com embaralhar a ordem.
-			System.out.println(" <B>" + emb.get(1)+"\n");
-			System.out.println(" <C>" + emb.get(2)+"\n");
-			System.out.println(" <D>" + emb.get(3)+"\n");
-			System.out.println(" <E>" + emb.get(4)+"\n");
+			+ "A)" + emb.get(0)+"\n"//Opções com embaralhar a ordem.
+			+ "B)" + emb.get(1)+"\n"
+			+ "C)" + emb.get(2)+"\n"
+			+ "D)" + emb.get(3)+"\n"
+			+ "E)" + emb.get(4)+"\n",TimeUnit.MILLISECONDS, temp_dialog);
 			operacao = entrada.next();
 
 			switch(operacao.toUpperCase()) {
@@ -778,35 +777,37 @@ public class play {
 			String alternativa5Cap4 = "Bosque do chalé";
 			List<String> urna1 = Arrays.asList(alternativa1Cap4, alternativa2Cap4, alternativa3Cap4, alternativa4Cap4, alternativa5Cap4);
 			Collections.shuffle(urna1);
-			System.out.println("A assembleia havia começado, o clima estava muito tenso em Mystic Valley,\n"
+			Digita("A assembleia havia começado, o clima estava muito tenso em Mystic Valley,\n"
 					+ " logo de cara muitos clãs junto com o próprio xerife, acusaram o clã dos centauros,\n"
 					+ " por conta do pelo ser da mesma cor e da mesma textura, quando o clã dos centauros estavam prestes a serem condenados,\n"
-					+ " o jovem bruxo detetive que o xerife havia pedido ajuda, chega na assembleia e diz:\n\n");
-			System.out.println("Bruxo:   - Não foram os centauros, eu estive durante a semana toda e estive na noite do roubo,/\n "
-					+ "junto com o clã dos centauros, eu acredito que quem roubou, colocou os pelos de centauros, para incrimina-los.");
-			System.out.println("Todos na assembleia ficam pensativos, e decidem concordar com o jovem bruxo, menos o xerife,"
+					+ " o jovem bruxo detetive que o xerife havia pedido ajuda, chega na assembleia e diz:\n\n"
+			                + "Bruxo:   - Não foram os centauros, eu estive durante a semana toda e estive na noite do roubo,/\n "
+					+ "junto com o clã dos centauros, eu acredito que quem roubou, colocou os pelos de centauros, para incrimina-los.\n"
+			                + "Todos na assembleia ficam pensativos, e decidem concordar com o jovem bruxo, menos o xerife,\n"
 					+ " que ainda tem suas ressalvas com aquela clã, devido a confusões em que ele já se envolveu antes com o clã de centauros,\n"
-					+ " e então o jovem bruxo e o xerife saem para ir atrás do verdadeiro culpado.\n ");
-			System.out.println(" então o jovem bruxo começa os interrogatórios por toda Mystic Valley,\n "
+					+ " e então o jovem bruxo e o xerife saem para ir atrás do verdadeiro culpado.\n "
+			                + " então o jovem bruxo começa os interrogatórios por toda Mystic Valley,\n "
 					+ "enquanto o xerife parece estar bem incomodado com as atitudes do bruxo,\n"
-					+ " o xerife então decide ir a cena do roubo sozinho. O bruxo então decide ir atrás do xerife discretamente .\n");
+					+ " o xerife então decide ir a cena do roubo sozinho. O bruxo então decide ir atrás do xerife discretamente .\n",TimeUnit.MILLISECONDS, temp_dialog);
 			do {
-				System.out.println("Enquanto o jovem bruxo seguia as pegadas ele percebeu que algumas delas estavam um pouco apagadas"
-						+ " e teria que caminhar um pouco mais até encontrar a próxima. Caminhando ele passou por três bosques :\n");
-				System.out.println("1) Bosque do Chá");
-				System.out.println("2) Bosque do Chalé");
-				System.out.println("3) Bosque do Japeri");
-				System.out.println(" \n"
+				Digita("Enquanto o jovem bruxo seguia as pegadas ele percebeu que algumas delas estavam um pouco apagadas"
+						+ " e teria que caminhar um pouco mais até encontrar a próxima. Caminhando ele passou por três bosques :\n"
+				+ "\n1) Bosque do Chá"
+				+ "\n2) Bosque do Chalé"
+				+ "\n3) Bosque do Japeri",TimeUnit.MILLISECONDS, temp_dialog);
+				Digita(" \n"
 						+ "Em um determinado ponto da sua caminhada ele tinha que escolher um caminho para continuar seguindo as pegadas,"
-						+ "pela lógica qual o próximo caminho ele deveria escolher :");
-				System.out.println("a) " + urna1.get(0));
-				System.out.println("b) " + urna1.get(1));
-				System.out.println("c) " + urna1.get(2));
-				System.out.println("d) " + urna1.get(3));
-				System.out.println("e) " + urna1.get(4));
-				System.out.print(":");
+						+ "pela lógica qual o próximo caminho ele deveria escolher :"
+				+ "\na) " + urna1.get(0)
+				+ "\nb) " + urna1.get(1)
+				+ "\nc) " + urna1.get(2)
+				+ "\nd) " + urna1.get(3)
+				+ "\ne) " + urna1.get(4),TimeUnit.MILLISECONDS, temp_quest);
+				
+                                System.out.print(":");
 				escolhaCap4 = entrada.next();
-				switch (escolhaCap4.toUpperCase()) {
+				
+                                switch (escolhaCap4.toUpperCase()) {
 				case "A":
 					if (urna.get(0).equals(alternativa1Cap4)) {
 						escolhaCap4 = alternativa1Cap4;
@@ -1004,7 +1005,7 @@ public class play {
         +"\nb) " + urna3.get(1)
         +"\nc) " + urna3.get(2)
         +"\nd) " + urna3.get(3)
-        +"\ne) " + urna3.get(4),TimeUnit.MILLISECONDS, temp_dialog);
+        +"\ne) " + urna3.get(4),TimeUnit.MILLISECONDS, temp_quest);
         
         String decisaoCap6 = entrada.next();
         switch (decisaoCap6.toLowerCase()) {
