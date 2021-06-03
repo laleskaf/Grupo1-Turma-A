@@ -773,7 +773,7 @@ public class play {
 		        String escolhaCap4;
 		        List<String> urna4 = Arrays.asList(alternativa1Cap4, alternativa2Cap4, alternativa3Cap4, alternativa4Cap4, alternativa5Cap4);
 		        Collections.shuffle(urna4);
-		        System.out.println("À assembleia havia começado, o clima estava muito tenso em Mystic Valley,\n"
+		        System.out.println("A assembleia havia começado, o clima estava muito tenso em Mystic Valley,\n"
 		                + " logo de cara muitos clãs junto com o próprio xerife, acusaram o clã dos centauros,\n"
 		                + " por conta do pelo ser da mesma cor e da mesma textura, quando o clã dos centauros estavam prestes a serem condenados,\n"
 		                + " o jovem bruxo detetive que o xerife havia pedido ajuda, chega na assembleia e diz:\n\n");
