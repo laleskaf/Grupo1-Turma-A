@@ -108,17 +108,17 @@ public class play {
 			System.out.printf("\n");
 
 			do {
-				Digita("Em um jardim: "
-						+"\nA) todas as flores, menos duas são rosas "
-						+"\nB) todas as flores, menos duas são margaridas"
-						+"\nC) todas as flores, menos duas são orquídeas.",TimeUnit.MILLISECONDS, temp_quest);
+				Digita("Em um jardim:\n "
+						+"\n-Todas as flores, menos duas são rosas "
+						+"\n-Todas as flores, menos duas são margaridas"
+						+"\n-Todas as flores, menos duas são orquídeas.",TimeUnit.MILLISECONDS, temp_quest);
 
-				Digita("Quantas flores há no jardim?"// desafio 1
-						+"\na) " + urna.get(0)
-						+"\nb) " + urna.get(1)
-						+"\nc) " + urna.get(2)
-						+"\nd) " + urna.get(3)
-						+"\ne) " + urna.get(4),TimeUnit.MILLISECONDS, temp_quest);
+				Digita("\nQuantas flores há no jardim?"// desafio 1
+						+"\nA) " + urna.get(0)
+						+"\nB) " + urna.get(1)
+						+"\nC) " + urna.get(2)
+						+"\nD) " + urna.get(3)
+						+"\nE) " + urna.get(4),TimeUnit.MILLISECONDS, temp_quest);
 				System.out.print(":");
 				resposta = entrada.next();
 				switch (resposta.toUpperCase()) {
@@ -162,8 +162,6 @@ public class play {
 			} while ((!(resposta.equalsIgnoreCase(alternativa1))));
 			Digita("Parabéns !!!! Você entrou na ilha, aqui começa a sua história....."
 					+"\nBOA SORTE!!",TimeUnit.MILLISECONDS, temp_dialog);// final capitulo 1
-
-		} 
 
 		String escolhacaminho,caminhoalternativo = "Tentar resolver sozinho.", 
 				caminhocerto = "Pedir ajuda a um jovem bruxo que está a observar.",
@@ -791,6 +789,7 @@ public class play {
 
 		}
 
+	}
 	}
 
 	static void Digita(String mensagem, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
