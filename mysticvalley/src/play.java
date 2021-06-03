@@ -313,11 +313,11 @@ public class play {
 		do {
 			System.out.println("  \n   *Menu*      ");
 			System.out.println("\n1- Jogar ");
-			System.out.println("2- InstruÃ§Ãµes ");
+			System.out.println("2- Instruções ");
 			System.out.println("3- Sinopse");
-			System.out.println("4- CrÃ©ditos ");
+			System.out.println("4- Créditos ");
 			System.out.println("5- Sair ");
-			System.out.print("Escolha uma opÃ§Ã£o: \n");
+			System.out.print("Escolha uma opção: \n");
 			escolha = entrada.nextInt();
 
 			switch (escolha) {
@@ -325,66 +325,63 @@ public class play {
 			case 1:
 				break;
 			case 2:
-				System.out.println("VocÃª escolheu {INSTRUÃ‡Ã•ES}");
+				System.out.println("\nVocê escolheu a opção Intruções");
 				System.out.printf("\n");
-				System.out.println("Em uma ilha muito distante, existe uma vila chamada Mystic Valley.");
-				System.out.println("Em uma noite de comemoraÃ§Ãµes acontece um roubo onde o item mais raro de toda ilha Ã© levado,");
-				System.out.println("entÃ£o um detetive com seus poderes sobrenaturais se dispÃµe a encontrar o culpado.");
-				System.out.println("Nessa aventura vocÃªs desvendarÃ£o esse mistÃ©rio que intriga os moradores de Mystic Valley.");
-				System.out.printf("\n");
-				System.out.println("O jogo Mystic Valley Ã© um jogo de multipla escolha, em que suas escolhas influenciam diretamente o jogo, ");
-
-				System.out.println("podendo mudar os caminhos e a histÃ³ria, o intuito dessas escolhas sÃ£o praticar a sua lÃ³gica, esperamos que vocÃª se divirta e que aumente a sua lÃ³gica !");
+				System.out.println("O jogo Mystic Valley é um jogo de multipla escolha, em que suas escolhas influenciam diretamente o jogo,"
+						+ "\npodendo mudar os caminhos e a história, o intuito dessas escolhas sÃo praticar a sua lógica,"
+						+ "\nesperamos que você se divirta e que aumente a sua lógica !");
 				break;
 			case 4:
-				System.out.println("VocÃª escolheu {CRÃ‰DITOS}");
-				System.out.println("Giovana SimÃµes");
+				System.out.println("\nVocê escolheu a opção Créditos\n");
+				System.out.println("Giovana Simões");
 				System.out.println("Guilherme Profirio");
 				System.out.println("Laleska Fernandes");
 				System.out.println("Leonardo Messias");
 				System.out.println("Thalles Negreiro");// nome de cada integrante
 				break;
 			case 3:
-				System.out.println("Você escolheu Sinopse");
-				System.out.println("Em uma ilha muito distante, existe uma vila chamada Mystic Valley. Em uma noite de comemorações acontece um roubo onde o item mais raro de toda ilha é levado,"
-						+ "então um detetive com seus poderes sobrenaturais se dispõe a encontrar o culpado. Nessa aventura vocês desvendarão esse mistério que intriga os moradores de Mystic Valley.");
+				System.out.println("\nVocê escolheu a opção Sinopse\n");
+				System.out.println("Em uma ilha muito distante, existe uma vila chamada Mystic Valley. "
+						+ "\nEm uma noite de comemorações acontece um roubo onde o item mais raro de toda ilha é levado,"
+						+ "\nentão um detetive com seus poderes sobrenaturais se dispõe a encontrar o culpado."
+						+ "\nNessa aventura vocês desvendarão esse mistério que intriga os moradores de Mystic Valley.");
 				break;
 			case 5:
-				System.err.println(" VocÃª saiu !");
+				System.err.println("\nVocê saiu !");
 				break;
 			default:
-				System.out.println("OpÃ§Ã£o invÃ¡lida !!!");
+				System.out.println("\nOpção inválida !!!");
 				break;
 
 			}
 		} while (!(escolha == 5 || escolha == 1));
 
 		if (escolha == 1) {
-			System.out.println("VocÃª escolheu {JOGAR}");
-			//continuar o cÃ³digo aqui 
+			System.out.println("Você escolheu a opção Jogar");
+			//continuar o código aqui 
 			System.out.printf("\n");
-			System.out.println("CapÃ­tulo  I - Potion of immortality\n");
-		        Digita ("\nNo meio de um oceano tÃ£o tÃ£o distante existe uma ilha misteriosa, quase tÃ£o grande quanto um paÃ­s, "
+			System.out.println("Capítulo  I - Potion of immortality\n");
+		        Digita ("\nNo meio de um oceano tão tão distante existe uma ilha misteriosa, quase tão grande quanto um país, "
 			+ "\nnessa ilha existe vilarejo chamado Mystic Valley "
-			+"\nonde habita diversas criaturas mÃ¡gicas de todas as espÃ©cies,"
-			+"\nque sÃ£o separadas por clÃ£s. O clÃ£ dos bruxos Ã© um dos mais poderosos de toda ilha,"
-			+"\npois eles possuem conhecimentos antigos, fÃ³rmulas e poÃ§Ãµes mÃ¡gicas,"
-			+"\numa dessas poÃ§Ãµes talvez a mais rara e cobiÃ§ada de toda ilha, Ã© a potion of immortality,"
-			+"\nonde o mito diz: Aquele que a consumir nunca morrerÃ¡.",TimeUnit.MILLISECONDS, temp_dialog);
+			+"\nonde habita diversas criaturas mágicas de todas as espécies,"
+			+"\nque são separadas por clãs. O clãs dos bruxos é um dos mais poderosos de toda ilha,"
+			+"\npois eles possuem conhecimentos antigos, fórmulas e poções mágicas,"
+			+"\numa dessas poções talvez a mais rara e cobiçada de toda ilha, a potion of immortality,"
+			+"\nonde o mito diz: Aquele que a consumir nunca morrerá.",TimeUnit.MILLISECONDS, temp_dialog);
 			
-			Digita("\n\nTodos os forasteiros de todos os cantos do mundo sÃ£o atraÃ­dos por essa ideia,"
-			+"\ncom a cobiÃ§a de a possui-la para si prÃ³prio, "
-			+"\nmas ao chegarem nas margens da ilha apenas aqueles seres mÃ¡gicos ou aqueles que provarem seu valor poderam adentrar-la,"
-			+"\natravÃ©s de um enigma implantado por mÃ¡gia......",TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\nTodos os forasteiros de todos os cantos do mundo são atraídos por essa ideia,"
+			+"\ncom a cobiça de a possui-la para si próprio, "
+			+"\nmas ao chegarem nas margens da ilha apenas aqueles seres mágicos ou aqueles que provarem seu valor poderam adentrar-la,"
+			+"\natravés de um enigma implantado por mágia......",TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.printf("\n");
 
 			do {
 				Digita("Em um jardim: "
-                                        +"\nA) todas as flores, menos duas sÃ£o rosas "
-				        +"\nB) todas as flores, menos duas sÃ£o margaridas"
-				        +"\nC) todas as flores, menos duas sÃ£o orquÃ­deas.",TimeUnit.MILLISECONDS, temp_quest);
+                                        +"\nA) todas as flores, menos duas são rosas "
+				        +"\nB) todas as flores, menos duas são margaridas"
+				        +"\nC) todas as flores, menos duas são orquídeas.",TimeUnit.MILLISECONDS, temp_quest);
 				        
-                                Digita("Quantas flores hÃ¡ no jardim?"// desafio 1
+                                Digita("Quantas flores há no jardim?"// desafio 1
 				+"\na) " + urna.get(0)
 				+"\nb) " + urna.get(1)
 				+"\nc) " + urna.get(2)
@@ -397,41 +394,41 @@ public class play {
 					if (urna.get(0).equals(alternativa1)) {
 						resposta = alternativa1;
 					} else {
-						System.err.println("Incorreta");
+						System.err.println("Alternativa incorreta!");
 					}
 					break;
 				case "B":
 					if (urna.get(1).equals(alternativa1)) {
 						resposta = alternativa1;
 					} else {
-						System.err.println("incorreta");
+						System.err.println("Alternativa incorreta!");
 					}
 					break;
 				case "C":
 					if (urna.get(2).equals(alternativa1)) {
 						resposta = alternativa1;
 					} else {
-						System.err.println("incorreta");
+						System.err.println("Alternativa incorreta!");
 					}
 					break;
 				case "D":
 					if (urna.get(3).equals(alternativa1)) {
 						resposta = alternativa1;
 					} else {
-						System.err.println("incorreta");
+						System.err.println("Alternativa incorreta!");
 					}
 					break;
 				case "E":
 					if (urna.get(4).equals(alternativa1)) {
 						resposta = alternativa1;
 					} else {
-						System.err.println("incorreta");
+						System.err.println("Alternativa incorreta!");
 					}
 					break;
 				}
 
 			} while ((!(resposta.equalsIgnoreCase(alternativa1))));
-			Digita("ParabÃ©ns !!!! VocÃª entrou na ilha, aqui comeÃ§a a sua histÃ³ria....."
+			Digita("Parabéns !!!! Você entrou na ilha, aqui começa a sua história....."
 			+"\nBOA SORTE!!",TimeUnit.MILLISECONDS, temp_dialog);// final capitulo 1
 
 		} 
@@ -590,7 +587,7 @@ public class play {
                             else if(!(escolhacap2.equals(enigcap2))){
                                 System.out.println("\nAlternativa Incorreta!");
                             }else{
-                              System.out.println("Opção invalida!");  
+                              System.out.println("Opção inválida!");  
                             }
                             
                         
@@ -662,7 +659,7 @@ public class play {
 				if (emb.get(0).equals(certo)){
 					operacao = certo;
 				}else {
-					Digita("Resposta incorreta! Tente novamente...\n ",TimeUnit.MILLISECONDS, temp_dialog);
+					System.err.println("Resposta incorreta! Tente novamente...\n ");
 
 				}break;
 
@@ -670,7 +667,7 @@ public class play {
 				if (emb.get(1).equals(certo)){
 					operacao = certo;		
 				}else {
-					Digita("Resposta incorreta! Tente novamente...\n ",TimeUnit.MILLISECONDS, temp_dialog);
+					System.err.println("Resposta incorreta! Tente novamente...\n ");
 
 				}break;
 
@@ -679,7 +676,7 @@ public class play {
 				if (emb.get(2).equals(certo)){
 					operacao = certo;
 				}else {
-					Digita("Resposta incorreta! Tente novamente...\n ",TimeUnit.MILLISECONDS, temp_dialog);
+					System.err.println("Resposta incorreta! Tente novamente...\n ");
 
 				}break;
 
@@ -687,7 +684,7 @@ public class play {
 				if (emb.get(3).equals(certo)){
 					operacao = certo;
 				}else {
-					Digita("Resposta incorreta! Tente novamente...\n ",TimeUnit.MILLISECONDS, temp_dialog);
+					System.err.println("Resposta incorreta! Tente novamente...\n ");
 
 				}break;
 
@@ -695,7 +692,7 @@ public class play {
 				if (emb.get(4).equals(certo)){
 					operacao = certo;
 				}else {
-					Digita("Resposta incorreta! Tente novamente...\n ",TimeUnit.MILLISECONDS, temp_dialog);
+					System.err.println("Resposta incorreta! Tente novamente...\n ");
 
 				}break;
 
@@ -793,35 +790,35 @@ public class play {
 		                    if (urna4.get(0).equals(alternativa2Cap4)) {
 		                        escolhaCap4 = alternativa2Cap4;
 		                    } else {
-		                        System.err.println("Incorreta");
+		                        System.err.println("\nAlternativa Incorreta!");
 		                    }
 		                    break;
 		                case "B":
 		                    if (urna4.get(1).equals(alternativa2Cap4)) {
 		                        escolhaCap4 = alternativa2Cap4;
 		                    } else {
-		                        System.err.println("incorreta");
+		                        System.err.println("\nAlternativa Incorreta!");
 		                    }
 		                    break;
 		                case "C":
 		                    if (urna4.get(2).equals(alternativa2Cap4)) {
 		                        escolhaCap4 = alternativa2Cap4;
 		                    } else {
-		                        System.err.println("incorreta");
+		                        System.err.println("\nAlternativa Incorreta!");
 		                    }
 		                    break;
 		                case "D":
 		                    if (urna4.get(3).equals(alternativa2Cap4)) {
 		                        escolhaCap4 = alternativa2Cap4;
 		                    } else {
-		                        System.err.println("incorreta");
+		                        System.err.println("\nAlternativa Incorreta!");
 		                    }
 		                    break;
 		                case "E":
 		                    if (urna4.get(4).equals(alternativa2Cap4)) {
 		                        escolhaCap4 = alternativa2Cap4;
 		                    } else {
-		                        System.err.println("incorreta");
+		                        System.err.println("\nAlternativa Incorreta!");
 		                    }
 		                    break;
 		            }
@@ -830,85 +827,7 @@ public class play {
 		    }//Fim Cap 4
 
 			}
-			Digita("Capítulo V  - O monte mais alto da Ilha\r\n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap V
-
-			String escolhaCap4;
-			String alternativa1Cap4 = "Bosque do Anseio";
-			String alternativa2Cap4 = "Bosque do café";
-			String alternativa3Cap4 = "Bosque da Casa";
-			String alternativa4Cap4 = "Bosque do chá";
-			String alternativa5Cap4 = "Bosque do chalé";
-			List<String> urna1 = Arrays.asList(alternativa1Cap4, alternativa2Cap4, alternativa3Cap4, alternativa4Cap4, alternativa5Cap4);
-			Collections.shuffle(urna1);
-			Digita("A assembleia havia começado, o clima estava muito tenso em Mystic Valley,\n"
-					+ " logo de cara muitos clãs junto com o próprio xerife, acusaram o clã dos centauros,\n"
-					+ " por conta do pelo ser da mesma cor e da mesma textura, quando o clã dos centauros estavam prestes a serem condenados,\n"
-					+ " o jovem bruxo detetive que o xerife havia pedido ajuda, chega na assembleia e diz:\n\n"
-			                + "Bruxo:   - Não foram os centauros, eu estive durante a semana toda e estive na noite do roubo,/\n "
-					+ "junto com o clã dos centauros, eu acredito que quem roubou, colocou os pelos de centauros, para incrimina-los.\n"
-			                + "Todos na assembleia ficam pensativos, e decidem concordar com o jovem bruxo, menos o xerife,\n"
-					+ " que ainda tem suas ressalvas com aquela clã, devido a confusões em que ele já se envolveu antes com o clã de centauros,\n"
-					+ " e então o jovem bruxo e o xerife saem para ir atrás do verdadeiro culpado.\n "
-			                + " então o jovem bruxo começa os interrogatórios por toda Mystic Valley,\n "
-					+ "enquanto o xerife parece estar bem incomodado com as atitudes do bruxo,\n"
-					+ " o xerife então decide ir a cena do roubo sozinho. O bruxo então decide ir atrás do xerife discretamente .\n",TimeUnit.MILLISECONDS, temp_dialog);
-			do {
-				Digita("Enquanto o jovem bruxo seguia as pegadas ele percebeu que algumas delas estavam um pouco apagadas"
-						+ " e teria que caminhar um pouco mais até encontrar a próxima. Caminhando ele passou por três bosques :\n"
-				+ "\n1) Bosque do Chá"
-				+ "\n2) Bosque do Chalé"
-				+ "\n3) Bosque do Japeri",TimeUnit.MILLISECONDS, temp_dialog);
-				Digita(" \n"
-						+ "Em um determinado ponto da sua caminhada ele tinha que escolher um caminho para continuar seguindo as pegadas,"
-						+ "pela lógica qual o próximo caminho ele deveria escolher :"
-				+ "\na) " + urna1.get(0)
-				+ "\nb) " + urna1.get(1)
-				+ "\nc) " + urna1.get(2)
-				+ "\nd) " + urna1.get(3)
-				+ "\ne) " + urna1.get(4),TimeUnit.MILLISECONDS, temp_quest);
-				
-                                System.out.print(":");
-				escolhaCap4 = entrada.next();
-				
-                                switch (escolhaCap4.toUpperCase()) {
-				case "A":
-					if (urna.get(0).equals(alternativa1Cap4)) {
-						escolhaCap4 = alternativa1Cap4;
-					} else {
-						System.err.println("Incorreta");
-					}
-					break;
-				case "B":
-					if (urna.get(1).equals(alternativa1Cap4)) {
-						escolhaCap4 = alternativa1Cap4;
-					} else {
-						System.err.println("incorreta");
-					}
-					break;
-				case "C":
-					if (urna.get(2).equals(alternativa1Cap4)) {
-						escolhaCap4 = alternativa1Cap4;
-					} else {
-						System.err.println("incorreta");
-					}
-					break;
-				case "D":
-					if (urna.get(3).equals(alternativa1Cap4)) {
-						escolhaCap4 = alternativa1Cap4;
-					} else {
-						System.err.println("incorreta");
-					}
-					break;
-				case "E":
-					if (urna.get(4).equals(alternativa1Cap4)) {
-						escolhaCap4 = alternativa1Cap4;
-					} else {
-						System.err.println("incorreta");
-					}
-					break;
-				}
-			} while ((!(escolhaCap4.equalsIgnoreCase(alternativa1Cap4))));
-			System.out.println("acerto");
+		
 			Digita("\n Capítulo V  - O monte mais alto da Ilha \n",TimeUnit.MILLISECONDS,temp_dialog);//Início Cap V
 
 
@@ -973,35 +892,35 @@ public class play {
 					if (casket.get(0).equals(option1)) {
 						answer= option1;
 					} else {
-						System.err.println("Incorreta");
+						System.err.println("\nAlternativa Incorreta!");
 					}
 					break;
 				case "B":
 					if (casket.get(1).equals(option1)) {
 						answer = option1;
 					} else {
-						System.err.println("incorreta");
+						System.err.println("\nAlternativa Incorreta!");
 					}
 					break;
 				case "C":
 					if (casket.get(2).equals(option1)) {
 						answer = option1;
 					} else {
-						System.err.println("incorreta");
+						System.err.println("\nAlternativa Incorreta!");
 					}
 					break;
 				case "D":
 					if (casket.get(3).equals(option1)) {
 						answer = option1;
 					} else {
-						System.err.println("incorreta");
+						System.err.println("\nAlternativa Incorreta!");
 					}
 					break;
 				case "E":
 					if (casket.get(4).equals(option1)) {
 						answer = option1;
 					} else {
-						System.err.println("incorreta");
+						System.err.println("\nAlternativa Incorreta!");
 					}
 					break;
 				}
