@@ -213,8 +213,9 @@ public class play {
 		do {
 			System.out.println("1- Jogar ");
 			System.out.println("2- InstruÃ§Ãµes ");
-			System.out.println("3- CrÃ©ditos ");
-			System.out.println("4- Sair ");
+			System.out.println("3- Sinopse");
+			System.out.println("4- CrÃ©ditos ");
+			System.out.println("5- Sair ");
 			System.out.print("Escolha uma opÃ§Ã£o: ");
 			escolha = entrada.nextInt();
 
@@ -243,6 +244,10 @@ public class play {
 				System.out.println("Thalles Negreiro");// nome de cada integrante
 				break;
 			case 4:
+				System.out.println("Você escolheu Sinopse");
+				System.out.println("Em uma ilha muito distante, existe uma vila chamada Mystic Valley. Em uma noite de comemorações acontece um roubo onde o item mais raro de toda ilha é levado,"
+						+ "então um detetive com seus poderes sobrenaturais se dispõe a encontrar o culpado. Nessa aventura vocês desvendarão esse mistério que intriga os moradores de Mystic Valley.");
+			case 5:
 				System.err.println(" VocÃª saiu !");
 				break;
 			default:
@@ -250,7 +255,7 @@ public class play {
 				break;
 
 			}
-		} while (!(escolha == 4 || escolha == 1));
+		} while (!(escolha == 5 || escolha == 1));
 
 		if (escolha == 1) {
 			System.out.println("VocÃª escolheu {JOGAR}");
