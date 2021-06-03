@@ -849,14 +849,16 @@ public class play {
 		}
 		Digita("\n Capítulo V  - O monte mais alto da Ilha \n",TimeUnit.MILLISECONDS, temp_dialog);//Início Cap V
 
-		String escolhaCap4;
-		String alternativa1Cap4 = "Bosque do Anseio";
-		String alternativa2Cap4 = "Bosque do café";
-		String alternativa3Cap4 = "Bosque da Casa";
-		String alternativa4Cap4 = "Bosque do chá";
-		String alternativa5Cap4 = "Bosque do chalé";
-		List<String> urna2 = Arrays.asList(alternativa1Cap4, alternativa2Cap4, alternativa3Cap4, alternativa4Cap4, alternativa5Cap4);
-		Collections.shuffle(urna2);
+
+		String answer;
+		String option1 = "Bosque do Anseio";
+		String option2 = "Bosque do Café";
+		String option3 = "Bosque da Casa";
+		String option4 = "Bosque do Chá";
+		String option5 = "Bosque do Chalé";
+		List<String> casket = Arrays.asList(option1, option2, option3, option4, option5);
+		Collections.shuffle(casket);
+		
 		Digita("Após os últimos acontecimentos o jovem bruxo (detetive) e o xerife pareciam já não caminhar na mesma direção. \n"
 				+ " Enquanto o Jovem bruxo (detetive) continuava acreditando na inocência do clã dos centauros,\n"
 				+ " o xerife não aceitava que qualquer outro clã pudesse ter cometido um crime que abalou tanto a confiança de toda a Ilha.\n"
@@ -889,63 +891,62 @@ public class play {
 				+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
 		
 		do {
-			System.out.println("Enquanto o jovem bruxo seguia as pegadas ele percebeu que algumas delas estavam um pouco apagadas"
-					+ " e teria que caminhar um pouco mais até encontrar a próxima. Caminhando ele passou por três bosques :\n");
-			System.out.println("1) Bosque do Chá");
-			System.out.println("2) Bosque do Chalé");
-			System.out.println("3) Bosque do Japeri");
-			System.out.println(" \n"
+			Digita("Enquanto o jovem bruxo seguia as pegadas ele percebeu que algumas delas estavam um pouco apagadas\n"
+					+ " e teria que caminhar um pouco mais até encontrar a próxima. Caminhando ele passou por três bosques :\n",TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("1) Bosque do Chá",,TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("2) Bosque do Chalé",TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("3) Bosque do Japeri",TimeUnit.MILLISECONDS, temp_dialog);
+			Digita(" \n"
 					+ "Em um determinado ponto da sua caminhada ele tinha que escolher um caminho para continuar seguindo as pegadas,"
-					+ "pela lógica qual o próximo caminho ele deveria escolher :");
-			System.out.println("a) " + urna2.get(0));
-			System.out.println("b) " + urna2.get(1));
-			System.out.println("c) " + urna2.get(2));
-			System.out.println("d) " + urna2.get(3));
-			System.out.println("e) " + urna2.get(4));
+					+ "pela lógica qual o próximo caminho ele deveria escolher :",TimeUnit.MILLISECONDS, temp_dialog);
+			System.out.println("a) " + casket.get(0));
+			System.out.println("b) " + casket.get(1));
+			System.out.println("c) " + casket.get(2));
+			System.out.println("d) " + casket.get(3));
+			System.out.println("e) " + casket.get(4));
 			System.out.print(":");
-			escolhaCap4 = entrada.next();
-			switch (escolhaCap4.toUpperCase()) {
+			answer = entrada.next();
+			switch (answer.toUpperCase()) {
 			case "A":
-				if (urna.get(0).equals(alternativa1Cap4)) {
-					escolhaCap4 = alternativa1Cap4;
+				if (casket.get(0).equals(option1)) {
+					answer= option1;
 				} else {
 					System.err.println("Incorreta");
 				}
 				break;
 			case "B":
-				if (urna.get(1).equals(alternativa1Cap4)) {
-					escolhaCap4 = alternativa1Cap4;
+				if (casket.get(1).equals(option1)) {
+					answer = option1;
 				} else {
 					System.err.println("incorreta");
 				}
 				break;
 			case "C":
-				if (urna.get(2).equals(alternativa1Cap4)) {
-					escolhaCap4 = alternativa1Cap4;
+				if (casket.get(2).equals(option1)) {
+					answer = option1;
 				} else {
 					System.err.println("incorreta");
 				}
 				break;
 			case "D":
-				if (urna.get(3).equals(alternativa1Cap4)) {
-					escolhaCap4 = alternativa1Cap4;
+				if (casket.get(3).equals(option1)) {
+					answer = option1;
 				} else {
 					System.err.println("incorreta");
 				}
 				break;
 			case "E":
-				if (urna.get(4).equals(alternativa1Cap4)) {
-					escolhaCap4 = alternativa1Cap4;
+				if (casket.get(4).equals(option1)) {
+					answer = option1;
 				} else {
 					System.err.println("incorreta");
 				}
 				break;
 			}
-		} while ((!(escolhaCap4.equalsIgnoreCase(alternativa1Cap4))));
+		} while ((!(answer.equalsIgnoreCase(option1))));
 		Digita("Muito bem!! Parece que esta no caminho certo,\n"
 				+ "Seguindo as pegadas, o jovem bruxo de longe avista um casebre abandonado no meio da mata…\r\n"
-				+ "\n" ,TimeUnit.MILLISECONDS, temp_dialog);
-                
+				+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
                  
                   
         
