@@ -60,7 +60,7 @@ public class play {
 				System.out.println("\nVocê escolheu a opção Intruções:");
 				System.out.printf("\n");
 				System.out.println("O jogo Mystic Valley é um jogo de multipla escolha, em que suas escolhas influenciam diretamente o jogo,"
-						+ "\npodendo mudar os caminhos e a história, o intuito dessas escolhas sÃo praticar a sua lógica,"
+						+ "\npodendo mudar os caminhos e a história, o intuito dessas escolhas são praticar a sua lógica,"
 						+ "\nesperamos que você se divirta e que aumente a sua lógica !");
 				break;
 			case 4:
@@ -346,7 +346,7 @@ public class play {
 				+ "		\nDecifre o código para descobrir quem é o dono do pelo: \r\n \n"
 				+ "Ω = 5   | ᄿᴥᄽ= 2  |  ㉧▼㉧ = 3  | ȣ = 1  |<(º) = 6 | ๋: = 9| ◤-.-◥ = 4 | ♞ = 7 | ϟ = 8 | 傘 =9\r\n"
 				+ "♨=10 | ✩ = 11 | ಜ=12 | �? = 13 | ʚĭɞ = 14 | ◑ = 15 | ☪ = 16 | ☀ = 17 | ☘ = 18 | ლ = 19\r\n"
-				+ "⌘ = 20 | �?� = 21 \n ");
+				+ "⌘ = 20 | ? = 21 \n ");
 
 		Digita("\n㉧▼㉧  |  ( (♨ - ◤-.-◥) - ȣ )  |  ʚĭɞ  | ⌘ |  ȣ |  ((✩ + ლ) - ๋:) |  ☘ |  ( ♨+Ω) \n",TimeUnit.MILLISECONDS, temp_dialog);
 
@@ -354,16 +354,17 @@ public class play {
 
 		 System.out.println("\nPara te ajudar, use calculadora: \n" );
 
-		String calculadora;//Variável para ver se o jogador quer utilizar dnv a calculadora.
-		do {
-			int op = menu();//Chama a função menu, que dará as opções da calculadora.
-			float n1 = entradaDados();//Chama a função que pede ao jogador o primeiro dado.
-			float n2 = entradaDados();//Chama a função que pede ao jogador o segundo dado.
-			float result = controlador(op,n1,n2);//Chama a função que faz a operação.
-			//System.out.println("\n\nPrecisa utilizar novamente? ");
-			calculadora = entrada.nextLine().toUpperCase();//Recebe o que o jogador digitou e deixa tudo em Maiúsculo.
-
-		}while(calculadora.equalsIgnoreCase("SIM"));
+		 String calculadora;//Variável para ver se o jogador quer utilizar dnv a calculadora.
+			do {
+				int op = menu();//Chama a função menu, que dará as opções da calculadora.
+				float n1 = entradaDados();//Chama a função que pede ao jogador o primeiro dado.
+				float n2 = entradaDados();//Chama a função que pede ao jogador o segundo dado.
+				float result = controlador(op,n1,n2);//Chama a função que faz a operação.
+				calculadora = entrada.nextLine().toUpperCase();//Recebe o que o jogador digitou e deixa tudo em Maiúsculo.
+				System.out.println("\nPrecisa utilizar novamente? ");
+				calculadora = entrada.nextLine().toUpperCase();//Recebe o que o jogador digitou e deixa tudo em Maiúsculo.
+				
+			}while(calculadora.equalsIgnoreCase("SIM"));
 		do {
 
 			List <String> emb = Arrays.asList (" 4 | 6 | 15 | 21 | 2 | 22 | 19 | 16 " ,  " 3 | 4 | 13 | 19 | 1 | 20 | 17 | 14 " , " 3 | 5 | 14 | 21 | 1 | 21 | 17 | 15 " ,  " 6 | 5 | 19 | 10 | 4 | 21 | 15 | 18 ", " 3 | 5 | 14 | 20 | 1 | 21 | 18 | 15 ");
@@ -489,7 +490,7 @@ public class play {
 				Collections.shuffle(urna4);
 				Digita("A assembleia havia começado, o clima estava muito tenso em Mystic Valley, logo de cara muitos clãs junto com o próprio xerife,"
 						+ "\nacusaram o clã dos centauros, por conta do pelo ser da mesma cor e da mesma textura, quando o clã dos centauros estavam prestes\n"
-						+ "\na serem condenados, o jovem bruxo detetive que o xerife havia pedido ajuda, chega na assembleia e diz:\n"
+						+ "a serem condenados, o jovem bruxo detetive que o xerife havia pedido ajuda, chega na assembleia e diz:\n"
 						+ "\nBruxo:  - “Não foram os centauros, eu estive durante a semana toda e estive na noite do roubo, junto com o clã dos centauros,"
 						+ "\neu acredito que quem roubou, colocou os pelos de centauros, para incriminá-los”. \n"
 						+ "\nTodos na assembleia ficam pensativos, e decidem concordar com o jovem bruxo, menos o xerife, que ainda tem suas ressalvas com aquela clã,"
@@ -662,7 +663,7 @@ public class play {
 				+ "\ncasebre abandonado no meio da mata…\r\n"
 				+ "\n",TimeUnit.MILLISECONDS, temp_dialog);
 		
-		System.out.println("Capítulo VI - O Culpado\n");
+		System.out.println("Capítulo VI - O Culpado");
 
 		String opc1 = "CULPAR O CLA DOS LOBISOMENS";
 
@@ -677,41 +678,37 @@ public class play {
 		List<String> urna3 = Arrays.asList(opc1, opc2, opc3, opc4, opc5);
 		Collections.shuffle(urna3);
 
-		Digita ("O jovem bruxo estava muito tenso e pensativo sobre o que iria achar no casebre,\n"
-				+ "chegando no casebre o bruxo sentia um forte odor que estava o deixando tonto porém isso\n"
-				+ "não o impediu de continuar a investigação no casebre, até que ele encontrou uma estranha\n"
-				+ "porta azul com um símbolo estranho, ele foi se aproximando cada vez mais da porta e cada\n "
-				+ "vez mais ele sentia um formigamento em suas pernas, quando o bruxo abriu a porta ele encontrou\n"
-				+ "o motivo do forte odor.\n" 
-				+"Era um corpo de um membro do clã dos Pés grandes, logo o bruxo falou :\n" 
-				+"“Um assassinato nessa ilha ?? Estranho”\n" 
-				+"O bruxo foi investigando mais a estranha sala até que encontrou registros de túneis antigos\n"
-				+ "e secretos que havia  no grande salão, logo o bruxo ja relacionou o assassinato com o grande\n"
-				+ "roubo, invsetigando mais a fundo a sala achou algo muito estranho e familiar, era o distintivo\n"
-				+ "do xerife da ilha, o bruxo ficou pensativo e muito assustado, começou a criar teorias em sua cabeça.\n"
-				+ "Mas será que o xerife seria capaz de trair a todos na ilha ?\n" 
-				+ "O bruxo foi até o gabinete do xerife para lhe fazer perguntas, porém ele foi cauteloso, o bruxo\n"
-				+ "fez a primeira pergunta:\n\n"
-				+ "-Eu estava aqui pensando… O clã dos Pés grandes tem um histórico de crimes aqui na ilha ? “\n"
-				+ "-“Não, desde que eu comecei nesse cargo aqui na ilha nunca tive problemas com eles, mas são\n"
-				+ "muito ambiciosos, querem ser os melhores em tudo, até em poder... .” disse o xerife \n" 
-				+"-“ E os lobisomens? Já teve algum problema com eles ? “ disse logo em seguida o xerife.\n" 
-				+"-“ Problemas sempre tive, em noite de lua cheia fazem coisas sem pensar e ficam muito agressivos. ”\n" 
-				+"-“ Hmmm entendo, E o senhor sabe de algum casebre antigo no monte ??\n" 
-				+"Xerife respirou…. pensou… e respondeu : “Não, fui poucas vezes ao monte e nunca vi nada alem de fadas,\n"
-				+ "árvores e gnomos.”\n" 
-				+"O bruxo começou a suspeitar que o xerife estaria mentindo, ele estava agindo de uma forma diferente\n"
-				+"do normal, estava suando, nervoso e apreensivo.\n "
-				+"Então fez a principal pergunta em tom mais alto e firme: \n" 
-				+"-“ Xerife, você poderia mostrar o seu distintivo por favor!”\n" 
-				+"-“ Aonde você está querendo chegar com isso BRUXO??” disse o xerife.\n" 
-				+"-“ Por favor, mostre !” disse o bruxo em tom grosseiro.\n" 
-				+"-“ Eu o perdi, a uma semana mais ou menos” disse o xerife\n" 
-				+"-“ AH, então você perdeu, tudo bem ! Reúna todos os clãs no grande salão em 10 minutos, já sei quem\n"
-				+"é o verdadeiro culpado.” disse o bruxo, e em seguida saiu do gabinete.\n" 
-				+"O bruxo estava nervoso, nunca teve um caso tão complicado para solucionar, ele estava em dúvida por\n"
-				+"dentro se estava fazendo o certo, se estava no caminho certo ou não, se o culpado era o xerife,\n"
-				+"se era os minotauros ou nenhum desses.",TimeUnit.MILLISECONDS, temp_dialog);
+		Digita ("\nO jovem bruxo estava muito tenso e pensativo sobre o que iria achar no casebre,chegando no casebre o bruxo sentia"
+				+ "\num forte odor que estava o deixando tonto porém isso não o impediu de continuar a investigação no casebre, até que"
+				+ "\nele encontrou uma estranha porta azul com um símbolo estranho, ele foi se aproximando cada vez mais da porta e cada"
+				+ "\nvez mais ele sentia um formigamento em suas pernas, quando o bruxo abriu a porta ele encontrou o motivo do forte odor." 
+				+"\nEra um corpo de um membro do clã dos Pés grandes, logo o bruxo falou:\n" 
+				+"\n-“Um assassinato nessa ilha ?? Estranho”\n" 
+				+"\nO bruxo foi investigando mais a estranha sala até que encontrou registros de túneis antigos e secretos que havia  no grande"
+				+ "\nsalão, logo o bruxo ja relacionou o assassinato com o grande roubo, invsetigando mais a fundo a sala achou algo muito estranho"
+				+ "\ne familiar, era o distintivo do xerife da ilha, o bruxo ficou pensativo e muito assustado, começou a criar teorias em sua cabeça.\n"
+				+ "\nMas será que o xerife seria capaz de trair a todos na ilha?\n"
+				+ "\nO bruxo foi até o gabinete do xerife para lhe fazer perguntas, porém ele foi cauteloso, o bruxo\n"
+				+ "fez a primeira pergunta:\n"
+				+ "\n-“Eu estava aqui pensando… O clã dos Pés grandes tem um histórico de crimes aqui na ilha ?“\n"
+				+ "\n-“Não, desde que eu comecei nesse cargo aqui na ilha nunca tive problemas com eles, mas são muito ambiciosos, querem ser os"
+				+ "\nmelhores em tudo, até em poder....” disse o xerife \n\n" 
+				+"\n-“E os lobisomens? Já teve algum problema com eles?“ Disse logo em seguida o xerife.\n" 
+				+"\n-“Problemas sempre tive, em noite de lua cheia fazem coisas sem pensar e ficam muito agressivos. ”\n" 
+				+"\n-“Hmmm entendo, E o senhor sabe de algum casebre antigo no monte ??“ \n" 
+				+"\nXerife respirou…. pensou… e respondeu :\n"
+				+ "\n-“Não, fui poucas vezes ao monte e nunca vi nada alem de fadas, árvores e gnomos.”\n" 
+				+"\nO bruxo começou a suspeitar que o xerife estaria mentindo, ele estava agindo de uma forma diferente do normal, estava suando,"
+				+"\nnervoso e apreensivo."
+				+"\nEntão fez a principal pergunta em tom mais alto e firme:\n" 
+				+"\n-“ Xerife, você poderia mostrar o seu distintivo por favor!”\n" 
+				+"\n-“ Aonde você está querendo chegar com isso BRUXO??” disse o xerife.\n" 
+				+"\n-“ Por favor, mostre !” disse o bruxo em tom grosseiro.\n" 
+				+"\n-“ Eu o perdi, a uma semana mais ou menos” disse o xerife\n" 
+				+"\n-“ AH, então você perdeu, tudo bem ! Reúna todos os clãs no grande salão em 10 minutos, já sei quem é o verdadeiro culpado.”\n"
+				+ "\nDisse o bruxo, e em seguida saiu do gabinete." 
+				+"\nO bruxo estava nervoso, nunca teve um caso tão complicado para solucionar, ele estava em dúvida por dentro se estava fazendo o certo,"
+				+ "\nse estava no caminho certo ou não, se o culpado era o xerife,se era os minotauros ou nenhum desses.",TimeUnit.MILLISECONDS, temp_dialog);
 
 
 		Digita("\n\nO destino da ilha está nas suas mãos!!\n"
@@ -801,26 +798,24 @@ public class play {
 			unit.sleep(tempo_mensagem);
 		}
 	}
-	static int temp_dialog = 9, temp_narrativa = 150, temp_quest = 7;
+	static int temp_dialog = 0, temp_narrativa = 150, temp_quest = 0;
 
 	static Scanner entrada = new Scanner(System.in);//Scanner global.
 	static void opc4()throws Exception {
-		Digita("\n“Boa noite a todos, reuni vocês para anunciar o culpado do roubo do artefato,\n"
-				+ "nossa primeira pista como todos sabem foi um pelo achado dos minotauros,\n"
-				+ "nunca descartamos eles como suspeitos, porem para ter uma visao melhor da ilha estava indo ao monte mais alto,\n"
-				+ "no caminho achei pegadas para um casebre antigo,\n"
-				+ "la dentro havia registros de tuneis secretos do grande salao que o ladrão usou para roubar o artefato,\n"
-				+ "e tambem achei um corpo de um pé grande”\n"
-				+ "todos ficaram chocados e absmados, é raro haver um assassinato na ilha, continuou o detetive…\n"
-				+ "“e tambem a pista principal para solucionar o caso,\n"
-				+ "o que aconteceu foi que inicialmente um membro dos pés grandes junto com o xerife estavam planejando o roubo,\n"
-				+ "depois que terminaram de planejar o xerife assassinou o pé grande por segurança,\n"
-				+ "depois de roubar o artefato tentou incriminar os minotauros para nao ser pego”\n"
-				+ "e complementou mostrando o distintivo do xerife. O xerife ficou com uma cara assustada,\n"
-				+ "continuou o detetive...  “ Dito tudo isso, minha conclusão final é que o próprio xerife de vocês é o grande responsável por esse roubo!! ” \n"
-				+ "Guardas de imediato foram e prenderam o xerife na pior sela de  Mystic Valley,\n"
-				+ "a sela do subsolo, dias depois o artefato foi encontrado e protegido com a melhor segurança possível. \n"
-				+ "A cidade ficou em choque com o acontecido, mas mesmo com tudo isso a paz voltará a prosperar e todos na ilha continuarão protegidos e felizes.\n",TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n-“Boa noite a todos, reuni vocês para anunciar o culpado do roubo do artefato,nossa primeira pista como todos sabem foi"
+				+ "\num pelo achado dos centauros, nunca descartamos eles como suspeitos, porém para ter uma visão melhor da ilha estava indo"
+				+ "\nao monte mais alto, no caminho achei pegadas para um casebre antigo, lá dentro havia registros de tuneis secretos do grande "
+				+ "\nsalão que o ladrão usou para roubar o artefato,e tambem achei um corpo de um pé grande”\n"
+				+ "\nTodos ficaram chocados e absmados, é raro haver um assassinato na ilha, continuou o detetive…\n\n"
+				+ "\n-“E também a pista principal para solucionar o caso, o que aconteceu foi que inicialmente um membro dos pés grandes junto com"
+				+ "\no xerife estavam planejando o roubo,depois que terminaram de planejar o xerife assassinou o pé grande por segurança,"
+				+ "\ndepois de roubar o artefato tentou incriminar os minotauros para nao ser pego”\n"
+				+ "\nE complementou mostrando o distintivo do xerife. O xerife ficou com uma cara assustada, continuou o detetive... \n "
+				+ "\n-“Dito tudo isso, minha conclusão final é que o próprio xerife de vocês é o grande responsável por esse roubo!!”\n "
+				+ "\nGuardas de imediato foram e prenderam o xerife na pior sela de  Mystic Valley.\n"
+				+ "\nA sela do subsolo, dias depois o artefato foi encontrado e protegido com a melhor segurança possível. \n"
+				+ "\nA cidade ficou em choque com o acontecido, mas mesmo com tudo isso a paz voltará a prosperar e todos na ilha"
+				+ "\ncontinuarão protegidos e felizes.\n",TimeUnit.MILLISECONDS, temp_dialog);
 		Digita("\nParabéns!! Você conclui a história do jogo e solucionou o mistério que intrigava os moradores de Mystic Valley!! \n\n\n",TimeUnit.MILLISECONDS, temp_dialog);
 		System.out.println("    |@@@@|     |####|\r\n"
 				+ "    |@@@@|     |####|\r\n"
@@ -840,48 +835,45 @@ public class play {
 	}
 
 	static void opc1() throws Exception{
-		Digita("“Boa noite a todos, reuni vocês para anunciar o culpado do roubo do artefato,\n"
-				+ "nossa primeira e única pista como todos sabem foi um pelo achado,\n "
-				+ "nunca descartamos os lobisomens e os centauros  como suspeitos, fui atrás de mais pistas,\n"
-				+ "tentei entender  melhor mas a minha conclusão sempre era a mesma,\n"
-				+ "com a ajuda do xerife decidi que o culpado do roubo é o clã dos lobisomens !! ”\n"
-				+ "completou o detetive dizendo “ e também achei um corpo em um casebre antigo, o corpo era do clã dos pés grandes,\n"
-				+ "vou iniciar outra investigação para saber o que houve.”\n"
-				+ "Todos ficaram em choque e com raiva ao mesmo tempo, com isso o clã dos lobisomens foram banidos da ilha para sempre,\n "
-				+ "1 dia depois o xerife fugiu da ilha e o artefato nunca foi achado. \n\n"
+		Digita("\n-“Boa noite a todos, reuni vocês para anunciar o culpado do roubo do artefato, nossa primeira e única "
+				+ "\npista como todos sabem foi um pelo achado, nunca descartamos os lobisomens e os centauros  como suspeitos,"
+				+ "\nfui atrás de mais pistas,tentei entender  melhor mas a minha conclusão sempre era a mesma,com a ajuda do xerife "
+				+ "\ndecidi que o culpado do roubo é o clã dos lobisomens !!”\n"
+				+ "\nCompletou o detetive dizendo: \n"
+				+ "\n-“E também achei um corpo em um casebre antigo, o corpo era do clã dos pés grandes,vou iniciar outra investigação para "
+				+ "\nsaber o que houve.”\n"
+				+ "\nTodos ficaram em choque e com raiva ao mesmo tempo, com isso o clã dos lobisomens foram banidos da ilha para sempre,"
+				+ "\n1 dia depois o xerife fugiu da ilha e o artefato nunca foi achado.\n\n"
 				+ "O culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
 	}
 
 	static void opc2() throws Exception{
-		Digita(" “Boa noite a todos, reuni vocês para  anunciar que irei largar o caso,\n"
-				+ " não há provas suficientes para incriminar e declarar alguém como culpado,\n"
-				+ " foi um desafio enorme para mim e peço desculpas por não conseguir a recuperar o artefato,\n "
-				+ "o xerife irá continuar com o processo da investigação, irei embora da ilha ao amanhecer.”\n"
-				+ "Todos da ilha ficaram decepcionados e chateados com o bruxo, eles estavam muito confiantes nele.\n"
-				+ "Após o bruxo deixar a ilha o xerife fugiu 1 dia depois e o artefato nunca foi achado.\n\n"
-				+ "O culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
+		Digita(" \n-“Boa noite a todos, reuni vocês para  anunciar que irei largar o caso,não há provas suficientes para incriminar e "
+				+ "\ndeclarar alguém como culpado,foi um desafio enorme para mim e peço desculpas por não conseguir a recuperar o artefato, "
+				+ "\no xerife irá continuar com o processo da investigação, irei embora da ilha ao amanhecer.”\n\n"
+				+ "\nTodos da ilha ficaram decepcionados e chateados com o bruxo, eles estavam muito confiantes nele.\n"
+				+ "\nApós o bruxo deixar a ilha o xerife fugiu 1 dia depois e o artefato nunca foi achado.\n\n"
+				+ "\nO culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
 	}
 
 	static void opc3() throws Exception{
-		Digita("“Boa noite a todos, reuni vocês para anunciar que a investigação a partir de agora será mais\n"
-				+ " rígida e rigorosa, irei interrogar TODOS a partir de agora, a partir de amanhã vai começar\n"
-				+ " um toque de recolher quando o sol se pôr e eu quero acesso a todos os locais de cada clã,\n"
-				+ " a investigação está muito complicada, não há muitas pistas, por isso as novas medidas!” \n"
-				+ "Mesmo com as novas medidas adotadas, nenhuma outra pista foi achada,\n"
-				+ " 2 dias depois o xerife abandonou a ilha e o artefato nunca foi achado.\n\n"
-				+ "O culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n-“Boa noite a todos, reuni vocês para anunciar que a investigação a partir de agora será mais rígida e rigorosa, irei "
+				+ "\ninterrogar TODOS a partir de agora, a partir de amanhã vai começar um toque de recolher quando o sol se pôr e eu quero "
+				+ "\nacesso a todos os locais de cada clã,a investigação está muito complicada, não há muitas pistas, por isso as novas medidas!”\n\n"
+				+ "\nMesmo com as novas medidas adotadas, nenhuma outra pista foi achada,2 dias depois o xerife abandonou a ilha e o artefato nunca"
+				+ "\nfoi achado.\n\n"
+				+ "\nO culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
 	}
 
 	static void opc5()throws Exception {
-		Digita("“Boa noite a todos, reuni vocês para anunciar o culpado do roubo do artefato, nossa primeira"
-				+ "e única pista como todos sabem foi um pelo achado dos centauros, nunca descartamos"
-				+ "ele como suspeitos, fui atrás de mais pistas, tentei entender o melhor mas a minha"
-				+ "conclusão sempre era a mesma, com a ajuda do xerife decidi que o culpado do roubo"
-				+ "é o clã dos centauros !! ” completou o detetive dizendo “ e também achei um corpo"
-				+ "em um casebre antigo, o corpo era do clã dos pés grandes, vou iniciar outra"
-				+ "investigação para saber o que houve.”\n"
-				+ "Todos ficaram em choque e com raiva ao mesmo tempo, com isso o clã dos centauros foram"
-				+ "banidos da ilha para sempre, 1 dia depois o xerife fugiu da ilha e o artefato nunca foi achado. \n\n"
+		Digita("\n-“Boa noite a todos, reuni vocês para anunciar o culpado do roubo do artefato, nossa primeira e única pista como todos sabem foi "
+				+ "\num pelo achado dos centauros, nunca descartamos ele como suspeitos, fui atrás de mais pistas, tentei entender o melhor mas a minha"
+				+ "\nconclusão sempre era a mesma, com a ajuda do xerife decidi que o culpado do roubo é o clã dos centauros !!”\n\n "
+				+ "\nCompletou o detetive dizendo:\n"
+				+ "\n“E também achei um corpo em um casebre antigo, o corpo era do clã dos pés grandes, vou iniciar outra"
+				+ "\ninvestigação para saber o que houve.”\n\n"
+				+ "\nTodos ficaram em choque e com raiva ao mesmo tempo, com isso o clã dos centauros foram banidos da ilha para sempre, 1 dia depois o xerife"
+				+ "\nfugiu da ilha e o artefato nunca foi achado. \n\n"
 				+ "O culpado era o XERIFE !! ",TimeUnit.MILLISECONDS, temp_dialog);
 	}
 
