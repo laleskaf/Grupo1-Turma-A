@@ -32,16 +32,23 @@ public class play {
 				+ "    \\/_/  \n");
 
 		int escolha;
+		  String vetor[] = new String[5];
+	        vetor[0] = "3";
+	        vetor[2] = "0";
+	        vetor[3] = "1";
+	        vetor[4] = "9";
+	        vetor[1] = "5";
 		String resposta;
-		String alternativa1 = "3";
+		/*String alternativa1 = "3";
 		String alternativa2 = "2";
 		String alternativa3 = "0";
 		String alternativa4 = "9";
-		String alternativa5 = "1";
+		String alternativa5 = "1";*/
 
-		List<String> urna = Arrays.asList(alternativa1, alternativa2, alternativa3, alternativa4, alternativa5);
-		Collections.shuffle(urna);
-
+		//List<String> urna = Arrays.asList(alternativa1, alternativa2, alternativa3, alternativa4, alternativa5);
+		//Collections.shuffle(urna);
+	        List<String> urna1 = Arrays.asList(vetor[0], vetor[1], vetor[2], vetor[3], vetor[4]);
+Collections.shuffle(urna1);
 		do {
 			System.out.println("  \n   *Menu*      ");
 			System.out.println("\n1- Jogar ");
@@ -65,6 +72,7 @@ public class play {
 				break;
 			case 4:
 				System.out.println("\nVocê escolheu a opção Créditos:\n");
+				System.out.println("Jogo elaborado por: \n");
 				System.out.println("Giovana Simões");
 				System.out.println("Guilherme Profirio");
 				System.out.println("Laleska Fernandes");
@@ -112,54 +120,56 @@ public class play {
 						+"\n-Todas as flores, menos duas são rosas "
 						+"\n-Todas as flores, menos duas são margaridas"
 						+"\n-Todas as flores, menos duas são orquídeas.\n",TimeUnit.MILLISECONDS, temp_quest);
+				
+				Collections.shuffle(urna1);
 
 				Digita("\nQuantas flores há no jardim?\n"// desafio 1
-						+"\nA) " + urna.get(0)
-						+"\nB) " + urna.get(1)
-						+"\nC) " + urna.get(2)
-						+"\nD) " + urna.get(3)
-						+"\nE) " + urna.get(4),TimeUnit.MILLISECONDS, temp_quest);
+						+"\nA) " + urna1.get(0)
+						+"\nB) " + urna1.get(1)
+						+"\nC) " + urna1.get(2)
+						+"\nD) " + urna1.get(3)
+						+"\nE) " + urna1.get(4),TimeUnit.MILLISECONDS, temp_quest);
 				System.out.print(":");
 				resposta = entrada.next();
-				switch (resposta.toUpperCase()) {
-				case "A":
-					if (urna.get(0).equals(alternativa1)) {
-						resposta = alternativa1;
-					} else {
-						System.err.println("Alternativa incorreta!");
-					}
-					break;
-				case "B":
-					if (urna.get(1).equals(alternativa1)) {
-						resposta = alternativa1;
-					} else {
-						System.err.println("Alternativa incorreta!");
-					}
-					break;
-				case "C":
-					if (urna.get(2).equals(alternativa1)) {
-						resposta = alternativa1;
-					} else {
-						System.err.println("Alternativa incorreta!");
-					}
-					break;
-				case "D":
-					if (urna.get(3).equals(alternativa1)) {
-						resposta = alternativa1;
-					} else {
-						System.err.println("Alternativa incorreta!");
-					}
-					break;
-				case "E":
-					if (urna.get(4).equals(alternativa1)) {
-						resposta = alternativa1;
-					} else {
-						System.err.println("Alternativa incorreta!");
-					}
-					break;
-				}
+				 switch (resposta.toUpperCase()) {
+			case "A":
+                if (urna1.get(0).equals(vetor[0])) {
+                    resposta = vetor[0];
+                } else {
+                    System.err.println("\nAlternativa incorreta!\n");
+                }
+                break;
+            case "B":
+                if (urna1.get(1).equals(vetor[0])) {
+                    resposta = vetor[0];
+                } else {
+                    System.err.println("\nAlternativa incorreta!\n");
+                }
+                break;
+            case "C":
+                if (urna1.get(2).equals(vetor[0])) {
+                    resposta = vetor[0];
+                } else {
+                    System.err.println("\nAlternativa incorreta!\n");
+                }
+                break;
+            case "D":
+                if (urna1.get(3).equals(vetor[0])) {
+                    resposta = vetor[0];
+                } else {
+                    System.err.println("\nAlternativa incorreta!\n");
+                }
+                break;
+            case "E":
+                if (urna1.get(4).equals(vetor[0])) {
+                    resposta = vetor[0];
+                } else {
+                    System.err.println("\nAlternativa incorreta!\n");
+                }
+                break;
+        }
 
-			} while ((!(resposta.equalsIgnoreCase(alternativa1))));
+			} while ((!(resposta.equalsIgnoreCase(vetor[0]))));
 			Digita("\nParabéns !!!! Você entrou na ilha, aqui começa a sua história....."
 					+"\nBOA SORTE!!",TimeUnit.MILLISECONDS, temp_dialog);// final capitulo 1
 
