@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
-public class play {
+public class Grupo1TurmaA {
 
 	public static void main(String[] args) throws Exception{
 
