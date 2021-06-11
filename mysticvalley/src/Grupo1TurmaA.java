@@ -808,7 +808,7 @@ Collections.shuffle(urna1);
 			unit.sleep(tempo_mensagem);
 		}
 	}
-	static int temp_dialog = 0, temp_narrativa = 150, temp_quest = 0;
+	static int temp_dialog = 20, temp_narrativa = 150, temp_quest =16;
 
 	static Scanner entrada = new Scanner(System.in);//Scanner global.
 	static void opc4()throws Exception {
